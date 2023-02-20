@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Bebas Neue", cursive;
+    src: url("../fonts/BebasNeue-Regular.ttf") format("ttf");
+}
+
+:root {
+    --doc-height: 100%;
+}
+
+p::-moz-selection,
+h1::-moz-selection,
+a::-moz-selection,
+div::-moz-selection {
+    color: #000;
+    background: transparent;
+}
+
+p::selection,
+h1::selection,
+a::selection,
+div::selection {
+    color: #000;
+    background: transparent;
+}
+
+body {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+section {
+    width: 100vw;
+    height: var(--doc-height);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+section h1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 56px;
+    line-height: 1.5;
+}
+
+section p,
+section div a {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+section div {
+    margin-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+section svg {
+    width: 48px;
+    height: 48px;
+}
+
+.canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--doc-height);
+    z-index: 1;
+    will-change: filter;
+    -webkit-filter: blur(24px);
+    -moz-filter: blur(24px);
+    -ms-filter: blur(24px);
+    filter: blur(24px);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--doc-height);
+    vertical-align: bottom;
+    z-index: 1;
+}
