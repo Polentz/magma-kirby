@@ -1,6 +1,8 @@
+    <footer>
+        <p><?= $site->footer() ?></p>
+    </footer>
     <?= js([
         'assets/js/script.js',
-        'assets/js/canvas.js',
         '@auto',
     ]) ?>
 </body>

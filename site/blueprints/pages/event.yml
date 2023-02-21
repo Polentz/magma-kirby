@@ -1,0 +1,70 @@
+title: Evento
+options:
+  navigation:
+    status: listed
+    template: all
+
+tabs:
+  eventslist:
+    label: Evento nella Home
+    icon: grid-full
+    sections:
+      block:
+        type: fields
+        fields:
+          filter:
+            label: "Filtra per:"
+            type: tags
+            width: 1/4
+            min: 1
+            max: 1
+          date:
+            label: Data
+            type: date
+            width: 1/1
+            display: DD/MM/YYYY
+          name:
+            label: Titolo dell'evento
+            type: text
+            width: 1/2
+          type:
+            label: Tipologia di evento
+            type: tags
+            width: 1/2
+          location:
+            label: Luogo
+            type: text
+            width: 1/2
+          image:
+            label: Immagine della home
+            type: files
+            width: 1/2
+            template: image
+            layout: cards
+            size: small
+            max: 1
+            image:
+              back: "#000"
+              icon: false
+              ratio: 1/1
+              cover: true
+  page:
+    label: Pagina dell'evento
+    icon: page
+    columns: 
+      - width: 1/2
+        sections:
+          left:
+            type: fields
+            fields:
+              lefttext:
+                label: false
+                type: writing
+      - width: 1/2
+        sections:
+          right:
+            type: fields
+            fields:
+              righttext:
+                label: false
+                type: writing

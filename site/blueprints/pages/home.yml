@@ -1,0 +1,9 @@
+title: Agenda
+
+sections:
+  pages:
+    label: Lista degli eventi
+    type: pages
+    image: false
+    templates:
+      - event

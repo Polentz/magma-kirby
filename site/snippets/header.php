@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,13 +32,14 @@
     <!-- <meta property="og:image" content=""> -->
     <!-- <meta name="twitter:image:alt" content=""> -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <!-- <link rel="shortcut icon" type="image/png" sizes="48x48" href="/assets/favicon/least-favicon-48.png"> -->
-    <!-- <link rel="shortcut icon" type="image/png" sizes="192x192" href="/assets/favicon/least-favicon-192.png"> -->
+    <!-- <link rel="shortcut icon" type="image/png" sizes="48x48" href="/assets/favicon/"> -->
+    <!-- <link rel="shortcut icon" type="image/png" sizes="192x192" href="/assets/favicon/"> -->
+    <link rel="stylesheet" href="https://use.typekit.net/mgw4tyk.css">
     <?= css ([
         'assets/css/base.css',
         'assets/css/style.css',
         '@auto',
     ]) ?>
 </head>
-
 <body>
+
