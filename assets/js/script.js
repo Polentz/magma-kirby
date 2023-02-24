@@ -25,7 +25,7 @@ const texts = document.querySelectorAll(".event-data");
 const overlay = document.querySelector(".overlay")
 const handleBlur = (covers, texts, overlay) => {
     covers.forEach(img => {
-        let randomLeft = Math.floor(Math.random() * 65);
+        let randomLeft = Math.floor(Math.random() * 75);
         img.style.setProperty("--random-left", `${randomLeft}` + "%");
         img.addEventListener("click", () => {
             covers.forEach(img => {
@@ -51,9 +51,16 @@ const handleBlur = (covers, texts, overlay) => {
 const filters = document.querySelectorAll(".filter");
 const events = document.querySelectorAll(".event-block");
 const resetFilters = document.querySelector(".page-title")
-const handleFilters = (filters, element, reset, elements) => {
+const handleFilters = (filters, element, resetFilters, elements) => {
     filters.forEach(filter => {
         filter.addEventListener("click", (e) => {
+            filters.forEach(all => {
+                all.classList.remove("current");
+            });
+            const activeFilter = e.currentTarget;
+            if (activeFilter) {
+                filter.classList.add("current");
+            };
             const filterName = e.currentTarget.dataset.filter;
             element.forEach(el => {
                 const elementTag = el.dataset.filter;
@@ -62,14 +69,31 @@ const handleFilters = (filters, element, reset, elements) => {
                 } else {
                     el.classList.remove("filtered");
                     el.classList.add("unfiltered");
-                }
+                };
             });
         });
     });
-    reset.addEventListener("click", () => {
+    resetFilters.addEventListener("click", () => {
         elements.forEach(el => {
             el.classList.add("unfiltered");
             el.classList.remove("unfiltered");
+        });
+        filters.forEach(all => {
+            all.classList.remove("current");
+        });
+    });
+};
+
+// const titleEvent = document.querySelectorAll(".event-data .title h2");
+const handleTitleHOverEffect = (events) => {
+    events.forEach(event => {
+        const title = event.querySelector(".event-data .title h2");
+        const cover = event.querySelector(".event-cover");
+        title.addEventListener("mouseenter", () => {
+            cover.classList.add("unblur");
+        });
+        title.addEventListener("mouseleave", () => {
+            cover.classList.remove("unblur");
         });
     });
 };
@@ -77,3 +101,4 @@ const handleFilters = (filters, element, reset, elements) => {
 handleFilters(filters, events, resetFilters, events);
 handleSubmenu(menuOpen, submenu, menuClose);
 handleBlur(covers, texts, overlay);
+handleTitleHOverEffect(events)

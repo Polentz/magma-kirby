@@ -16,7 +16,6 @@ body {
     font-weight: 700;
     font-size: var(--normal-txt-size);
     line-height: 1.2;
-    /* padding: var(--general-margin); */
     background-color: var(--bg-color);
     position: relative;
 }
@@ -54,6 +53,11 @@ header {
 .submenu {
     opacity: 0;
     pointer-events: none;
+}
+
+.current,
+.page-title {
+    border-bottom: 1px solid var(--txt-color);
 }
 
 .page-title,
@@ -204,7 +208,7 @@ main {
     width: 344px;
     position: absolute;
     top: -1rem;
-    left: calc(35% + var(--random-left));
+    left: calc(55% + var(--random-left));
     pointer-events: all;
 }
 
@@ -212,7 +216,7 @@ main {
     width: 100%;
     opacity: .85;
     filter: blur(72px);
-    transition: all .5s ease;
+    transition: opacity .5s ease, filter .25s ease-in-out;
 }
 
 .event-cover img:hover {
@@ -230,7 +234,7 @@ main {
     display: flex;
     align-items: center;
     gap: var(--general-margin);
-    margin: 6rem 0;
+    margin: 4rem 0;
 }
 
 .events-separator svg {
