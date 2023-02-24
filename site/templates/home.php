@@ -1,14 +1,12 @@
 <?= snippet('header') ?>
-<?= snippet('menu') ?>
-
-<?php foreach ($filters as $filter) : ?>
-    <div><?= $filter ?></div>
-<?php endforeach ?>
+<?= snippet('menu', ['filters' => $filters]) ?>
 
 <main class="agenda">
     <section id="future-events" class="events-wrapper">
         <?php foreach ($events as $event) : ?>
-            <?= snippet('event', ['event' => $event]) ?>
+            <?php if($event->date()->toDate() > time()) : ?>
+                <?= snippet('event', ['event' => $event]) ?>
+            <?php endif ?>
         <?php endforeach ?>
     </section>
 
@@ -20,10 +18,14 @@
     </div>
 
     <section id="past-events" class="events-wrapper">
-        <?php // foreach ($events as $event) : ?>
-
-        <?php // endforeach ?>
+        <?php foreach ($events as $event) : ?>
+            <?php if($event->date()->toDate() < time()) : ?>
+                <?= snippet('event', ['event' => $event]) ?>
+            <?php endif ?>
+        <?php endforeach ?>
     </section>
+
+    <section class="overlay"></section>
 </main>
 
 <?= snippet('footer') ?>

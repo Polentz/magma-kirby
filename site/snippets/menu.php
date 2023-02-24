@@ -1,15 +1,18 @@
 <header>
     <div class="menu">
         <div class="menu-block">
-            <a href="<?= $page->url() ?>" class="menu-link"><?= $page->title() ?></a>
+            <h1 class="page-title"><?= $page->title() ?></h1>
             <?php if ($page->isHomePage()) : ?>
                 <?php foreach ($filters as $filter) : ?>
-                    <a class="menu-link"><?= $filter ?></a>
+                    <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
                 <?php endforeach ?>
             <?php endif ?>
         </div>
         <div class="menu-block">
-            <a class="menu-link">Menu</a>
+            <svg id="menu-close" class="menu-close" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 13L13 1.00001M1 1L13 13"/>
+            </svg>
+            <a id="menu-open" class="menu-link">Menu</a>
         </div>
     </div>
     <div class="submenu">

@@ -9,7 +9,7 @@ tabs:
     label: Evento nella Home
     icon: grid-full
     sections:
-      block:
+      filter:
         type: fields
         fields:
           filter:
@@ -18,35 +18,46 @@ tabs:
             width: 1/4
             min: 1
             max: 1
+            layout: list
+      date:
+        type: fields
+        fields:
           date:
             label: Data
             type: date
             width: 1/1
             display: DD/MM/YYYY
+      info:
+        type: fields
+        fields:
           name:
             label: Titolo dell'evento
             type: text
             width: 1/2
           type:
             label: Tipologia di evento
-            type: tags
+            type: text
             width: 1/2
           location:
             label: Luogo
             type: text
             width: 1/2
+      image:
+        type: fields
+        fields:
           image:
             label: Immagine della home
             type: files
             width: 1/2
             template: image
             layout: cards
-            size: small
+            size: huge
+            multiple: false
             max: 1
             image:
               back: "#000"
               icon: false
-              ratio: 1/1
+              ratio: 5/3
               cover: true
   page:
     label: Pagina dell'evento

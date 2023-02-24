@@ -4,6 +4,20 @@ sections:
   pages:
     label: Lista degli eventi
     type: pages
+    layout: table
+    columns:
+      date:
+        type: text
+        label: Data 
+        value: '{{ page.date }}'
+      type:
+        type: text
+        label: Tag
+        value: '{{ page.type }}'
+      location:
+        type: text
+        label: Luogo
+        value: '{{ page.location }}'
+        width: 1/3
     image: false
-    templates:
-      - event
+    template: event

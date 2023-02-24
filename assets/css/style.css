@@ -8,6 +8,7 @@
     --small-txt-size: .6rem;
     --general-margin: 1rem;
     --large-margin: 6rem;
+    --random-left: 55%
 }
 
 body {
@@ -51,13 +52,17 @@ header {
 }
 
 .submenu {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
 }
 
+.page-title,
 .menu-link {
     font-size: var(--normal-txt-size);
     font-weight: 800;
     text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .menu-block {
@@ -72,9 +77,25 @@ header {
     backdrop-filter: blur(20px);
 }
 
+.menu-close {
+    width: 1rem;
+    stroke: var(--txt-color);
+    stroke-width: 2px;
+    display: block;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: 0;
+    transition: all .5s ease;
+}
+
 .menu .menu-block:nth-child(2) {
     flex: 1 0;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: all;
 }
 
 .submenu .menu-block {
@@ -91,7 +112,7 @@ header {
 .submenu-wrapper svg {
     width: 1.2rem;
     stroke: var(--txt-color);
-    stroke-width: 2px;
+    stroke-width: 2.5px;
     display: block;
 }
 
@@ -100,9 +121,25 @@ main {
     min-height: var(--doc-height);
 }
 
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.events-wrapper {
+    width: max-content;
+    min-width: 360px;
+}
+
 .event-block {
     position: relative;
-    /* width: max-content; */
     pointer-events: none;
 }
 
@@ -110,8 +147,21 @@ main {
     margin-bottom: 6rem;
 }
 
+.event-block.unfiltered {
+    display: none;
+}
+
+.event-block.filtered {
+    display: block;
+}
+
 .event-data {
     mix-blend-mode: difference;
+}
+
+.event-data.blur {
+    opacity: .85;
+    filter: blur(16px);
 }
 
 .event-data div {
@@ -151,16 +201,15 @@ main {
 }
 
 .event-cover {
-    max-width: 344px;
+    width: 344px;
     position: absolute;
     top: -1rem;
-    left: 55%;
+    left: calc(35% + var(--random-left));
     pointer-events: all;
 }
 
 .event-cover img {
-    max-width: 100%;
-    object-fit: cover;
+    width: 100%;
     opacity: .85;
     filter: blur(72px);
     transition: all .5s ease;
@@ -170,6 +219,11 @@ main {
     opacity: .95;
     filter: blur(32px);
     cursor: pointer;
+}
+
+.event-cover.unblur img {
+    opacity: 1;
+    filter: blur(0px);
 }
 
 .events-separator {

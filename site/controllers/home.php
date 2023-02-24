@@ -5,9 +5,9 @@
         $unfiltered = $events;
         $events = $unfiltered
             ->when($filterBy, function($filterBy) {
-            return $this->filterBy('events', $filterBy);
+            return $this->filterBy('filter', $filterBy);
             });
-        $filters = $unfiltered->pluck('events', null, true);
+        $filters = $unfiltered->pluck('filter', null, true);
         return [
             'events' => $events,
             'filterBy' => $filterBy,
