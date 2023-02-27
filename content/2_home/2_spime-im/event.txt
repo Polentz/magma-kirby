@@ -22,7 +22,42 @@ Location: MAR – Museo del Mare della città di Ravenna
 
 ----
 
-Image: - file://boWWLFp7L2FFFt9o
+Cover: - file://8qAwRYZonIM4ECqa
+
+----
+
+Lefttext: <p>Sabato 8 ottobre il MAR – Museo d’Arte della Città di Ravenna ha ospitato nel suo chiostro il collettivo artistico torinese Spime.im che si è esibito con la performance audiovisiva dal titolo ZERO. Lo show si è proposto come evento inaugurale della VII Biennale di Mosaico Contemporaneo e come perfetto esempio di mosaico digitale, dove le sue tessere corrispondono a pixel e immagini in movimento.</p><p>Come tessere di un grande mosaico, le immagini selezionate e rielaborate dal collettivo torinese Spime.im ci trasportano in uno spazio e in un tempo che corrispondono al qui e ora. Zero è un’opera audiovisiva sinestetica che, con la sua sonorità irruente e distorta, e con i suoi visual frenetici e provocatori, schiaffa in faccia allo spettatore la cruda realtà contemporanea di un mondo afflitto da problemi ai quali l’essere umano è chiamato a porre rimedio. Grandi, medie e piccole tessere digitali, affiancate una accanto all’altra, vanno a comporre una superficie musiva in continuo mutamento, che si propone come manifesto multimediale pronto a denunciare i costanti errori e glitch causati dalla nostra società.</p><p>Qui, ancora una volta, vediamo il mosaico per quello che è: non solo una pura tecnica, ma un modo per pensare la realtà come una e molteplice, dove il tutto è composto dalle singole parti. Tuttavia, il titolo della performance ci offre anche l’opportunità di un nuovo inizio, di resuscitare dalle proprie ceneri, di ripartire dai propri sbagli e di ricominciare da ZERO.</p><p>L'evento è a cura dell'associazione in collaborazione con il Comune di Ravenna.</p>
+
+----
+
+Righttext: <p>Spime.im (Davide Tomat, Gabriele Ottino, Marco Casolati, Matteo Marson) è un collettivo artistico che ha lo scopo di indagare, attraverso progetti transmediali, le estetiche e i linguaggi derivati dall’affermarsi della realtà digitale. Spime.im usa la tecnologia, l’arte tridimensionale e la musica elettronica per tessere esperienze audio- video immersive, che esplorano i confini dell’identità, della corporeità e della percezione, in un mondo in cui il nostro doppelgänger virtuale assume una posizione sempre più intensa, protagonista e totalizzante.</p>
+
+----
+
+Logo: - file://OEufr8lsqLIjPHWF
+
+----
+
+Gallery:
+
+- file://8qAwRYZonIM4ECqa
+- file://2W77Xw9sRfcMiN7d
+- file://4fcoYVzcaUMZo9JX
+- file://Mk1SbeZ2BSeu8kO4
+- file://g7SNqg3nS7559eym
+- file://g6ivMIYbKC4RFPIL
+
+----
+
+Video: - file://lamBV1RLpNIw3LCD
+
+----
+
+Cane: - file://lamBV1RLpNIw3LCD
+
+----
+
+Image: - file://6i0I9tipqt85kIbD
 
 ----
 

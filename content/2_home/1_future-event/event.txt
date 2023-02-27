@@ -1,0 +1,53 @@
+Title: Future Event
+
+----
+
+Filter: Dj Set
+
+----
+
+Date: 2023-03-08
+
+----
+
+Name: Future Event
+
+----
+
+Type: Dj Set
+
+----
+
+Location: Twin Peaks
+
+----
+
+Cover: - file://wKV7qgJIe0N0rqnI
+
+----
+
+Lefttext: 
+
+----
+
+Righttext: 
+
+----
+
+Logo: 
+
+----
+
+Gallery: 
+
+----
+
+Video: 
+
+----
+
+Image: - file://boWWLFp7L2FFFt9o
+
+----
+
+Uuid: acn6O2NcOlor4Hqn

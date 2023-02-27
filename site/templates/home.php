@@ -1,7 +1,7 @@
 <?= snippet('header') ?>
 <?= snippet('menu', ['filters' => $filters]) ?>
 
-<main class="agenda">
+<main>
     <section id="future-events" class="events-wrapper">
         <?php foreach ($events as $event) : ?>
             <?php if($event->date()->toDate() > time()) : ?>

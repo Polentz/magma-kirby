@@ -20,6 +20,14 @@ body {
     position: relative;
 }
 
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
 footer {
     font-weight: 400;
     font-size: var(--normal-txt-size);

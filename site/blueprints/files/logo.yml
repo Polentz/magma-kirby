@@ -1,0 +1,10 @@
+title: Logo
+
+accept: 
+  extension: jpg, png, jpeg
+
+fields:
+  alt:
+    type: text
+    width: 1/2
+    label: Testo alternativo

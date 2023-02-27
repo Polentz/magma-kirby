@@ -1,8 +1,8 @@
 <header>
     <div class="menu">
         <div class="menu-block">
+            <h1 class="page-title"><?= $page->title() ?></h1>
             <?php if ($page->isHomePage()) : ?>
-                <h1 class="page-title"><?= $page->title() ?></h1>
                 <?php foreach ($filters as $filter) : ?>
                     <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
                 <?php endforeach ?>
