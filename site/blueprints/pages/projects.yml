@@ -1,0 +1,27 @@
+title: Progetti
+options:
+  navigation:
+    status: listed
+    template: all
+
+sections:
+  pages:
+    label: Lista dei progetti
+    type: pages
+    layout: table
+    columns:
+      years:
+        type: text
+        label: Quando? 
+        value: '{{ page.years }}'
+      location:
+        type: text
+        label: Dove?
+        value: '{{ page.location }}'
+        width: 1/3
+      type:
+        type: text
+        label: Tag
+        value: '{{ page.type }}'
+    image: false
+    template: project

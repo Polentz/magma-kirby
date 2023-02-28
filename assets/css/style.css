@@ -370,3 +370,7 @@ main {
 .info-column:last-of-type {
     font-weight: 400;
 }
+
+.project-wrapper {
+    position: relative;
+}

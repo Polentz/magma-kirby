@@ -1,19 +1,22 @@
 <header>
     <div class="menu">
         <div class="menu-block">
-            <h1 class="page-title"><?= $page->title() ?></h1>
             <?php if ($page->isHomePage()) : ?>
+                <h1 class="page-title menu-link"><?= $page->title() ?></h1>
                 <?php foreach ($filters as $filter) : ?>
                     <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
                 <?php endforeach ?>
             <?php endif ?>
+
             <?php if ($page->is('about')) : ?>
+                <h1 class="page-title"><?= $page->title() ?></h1>
                 <a class="menu-link" href="<?= $page->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
                 <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
             <?php endif ?>
-            <?php if ($page->is('somepage')) : ?>
+            <?php if ($page->is('projects')) : ?>
+                <h1 class="page-title menu-link"><?= $page->title() ?></h1>
                 <?php foreach ($page->children()->listed() as $project) : ?>
-                    <a class="menu-link filter" data-page="<?= $project->inline()->slug() ?>"><?= $project->inline() ?></a>
+                    <a class="menu-link js-href" href="#<?= $project->title()->slug() ?>"><?= $project->title() ?></a>
                 <?php endforeach ?>
             <?php endif ?>
         </div>
@@ -48,7 +51,7 @@
             <div class="submenu-wrapper">
                 <?php foreach ($pages->listed()->not('coming-soon') as $page) : ?>
                     <a href="<?= $page->url() ?>" class="menu-link <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></a>
-                <?php endforeach ?>
+                <?php endforeach ?>                  
             </div>
         </div>
     </div>

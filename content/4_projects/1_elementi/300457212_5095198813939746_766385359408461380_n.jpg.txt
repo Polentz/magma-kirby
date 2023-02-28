@@ -1,0 +1,5 @@
+Uuid: igeytdmpnDrTyZou
+
+----
+
+Template: image

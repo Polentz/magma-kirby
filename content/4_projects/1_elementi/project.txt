@@ -1,0 +1,49 @@
+Title: Elementi
+
+----
+
+Years: 2020/ONGOING
+
+----
+
+Name: Elementi
+
+----
+
+Type: RASSEGNA DI MUSICA CONTEMPORANEA
+
+----
+
+Location: A CURA DI MU E MAGMA
+
+----
+
+Lefttext: <p>ELEMENTI, la rassegna di musica contemporanea ideata dalle ssociazioni MU e MAGMA durante il lockdown del 2020 con l’intento di ritrovare una dimensione performativa immersiva all’interno di paesaggi naturali dall’elevata potenza emozionale che caratterizzano il territorio romagnolo.</p>
+
+----
+
+Righttext: 
+
+----
+
+Logo: - file://sG8JS00nsCXbB54s
+
+----
+
+Gallery:
+
+- file://n5YcNYzThoXMRer4
+- file://YRDGDc3rLy9vYpSG
+- file://igeytdmpnDrTyZou
+
+----
+
+Video: 
+
+----
+
+Uuid: puiag4Gm6sL3uTGh
+
+----
+
+Date: 2020/ONGOING
