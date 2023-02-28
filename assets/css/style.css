@@ -51,6 +51,37 @@ header {
     z-index: 999;
 }
 
+.page-label {
+    position: fixed;
+    right: var(--general-margin);
+    top: 50%;
+    z-index: 999;
+    pointer-events: none;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: var(--general-margin);
+    transform: rotate(90deg) translate(50%, 100%);
+    transform-origin: right;
+}
+
+.page-label svg {
+    width: var(--large-txt-size);
+    stroke: var(--txt-color);
+    stroke-width: .5px;
+}
+
+.page-label p {
+    font-size: var(--small-txt-size);
+    font-weight: 400;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+}
+
+.page-label a {
+    pointer-events: all;
+}
+
 .menu,
 .submenu {
     display: flex;
@@ -81,6 +112,8 @@ header {
     white-space: nowrap;
 }
 
+.page-title.home,
+.page-title.event,
 .current,
 .menu-link {
     cursor: pointer;

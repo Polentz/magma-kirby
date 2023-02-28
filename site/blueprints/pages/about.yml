@@ -41,9 +41,6 @@ columns:
       menu:
         type: fields
         fields:
-          support:
-            label: Sostieni
-            type: url
           subscribe:
             label: Newsletter
             type: url

@@ -27,6 +27,9 @@ columns:
           email:
             label: Email
             type: text
+          support:
+            label: Sostieni
+            type: url
           footer:
             label: Footer
             type: text
