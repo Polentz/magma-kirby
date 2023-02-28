@@ -1,5 +1,5 @@
-const covers = document.querySelectorAll(".event-cover");
-const texts = document.querySelectorAll(".event-data");
+const covers = document.querySelectorAll(".headline-cover");
+const texts = document.querySelectorAll(".headline-data");
 const overlay = document.querySelector(".overlay")
 const handleBlur = (covers, texts, overlay) => {
     covers.forEach(img => {
@@ -27,7 +27,7 @@ const handleBlur = (covers, texts, overlay) => {
 };
 
 const filters = document.querySelectorAll(".filter");
-const events = document.querySelectorAll(".event-block");
+const events = document.querySelectorAll(".headline-block");
 const resetFilters = document.querySelector(".page-title")
 const handleFilters = (filters, element, resetFilters, elements) => {
     filters.forEach(filter => {
@@ -64,8 +64,8 @@ const handleFilters = (filters, element, resetFilters, elements) => {
 
 const handleTitleHOverEffect = (events) => {
     events.forEach(event => {
-        const title = event.querySelector(".event-data .title h2");
-        const cover = event.querySelector(".event-cover");
+        const title = event.querySelector(".headline-data .title h2");
+        const cover = event.querySelector(".headline-cover");
         title.addEventListener("mouseenter", () => {
             cover.classList.add("unblur");
         });
