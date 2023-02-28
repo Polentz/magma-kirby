@@ -48,7 +48,7 @@
         <p>The website is having a new restyling</p>
         <p>In the meanwhile stay updated on our social networks</p>
         <div>
-            <a href="https://www.instagram.com/magma_it/" target="_blank">
+            <a href="https://www.instagram.com/magma_it/" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     width="192" height="192" fill="#fff" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>
@@ -59,7 +59,7 @@
                     <circle cx="180" cy="76" r="12"></circle>
                 </svg>
             </a>
-            <a href="https://www.facebook.com/MAGMAitalia" target="_blank">
+            <a href="https://www.facebook.com/MAGMAitalia" target="_blank" rel="noopener noreferrer">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     width="192" height="192" fill="#fff" viewBox="0 0 256 256">
                     <rect width="256" height="256" fill="none"></rect>

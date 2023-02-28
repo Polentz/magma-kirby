@@ -1,0 +1,25 @@
+Title: Chi siamo
+
+----
+
+Lefttext: <p>Magma sorge a Cervia nel 2014, si tratta di un collettivo di artisti e persone accomunate dall’interesse verso le forme dell’arte contemporanea: dalla musica all’arte performativa fino alle arti visive. Obiettivo principale di MAGMA è il coinvolgimento e la sensibilizzazione sociale nei confronti delle arti, della creatività e del territorio, a partire da quello di provenienza. Dal 2015, infatti, MAGMA organizza eventi nel territorio romagnolo, azioni culturali in cui convergono diverse discipline artistiche che si offrono ai partecipanti la possibilità di spaziare oltre il proprio campo di esperienza e interesse personale, trovandosi coinvolti da molteplici stimoli. Gli interventi di MAGMA si contraddistinguono per un uso scenografico degli spazi, finalizzato a potenziare le espressioni artistiche e gli stessi. In più occasioni, protagonisti degli eventi sono i contesti che li accolgono - teatri naturali, urbani ed extra urbani, architetture in disuso -, luoghi dimenticati che conservano un grande valore storico e/o artistico e generano un forte impatto estetico ed emotivo.</p><p>Dal 2019 MAGMA organizza - insieme all’associazione culturale MU –<br>Elementi, una rassegna dedicata alla musica contemporanea e alle arti<br>performative e il cui intento è presentare al pubblico la trasversalità<br>dei linguaggi contemporanei in relazione alla potenza emozionale di paesaggi simbolici.</p><p>L’Associazione culturale MAGMA APS si fonda nel 2020.</p>
+
+----
+
+Righttext: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+----
+
+Support: http://www.magma.zone/
+
+----
+
+Subscribe: http://www.magma.zone/
+
+----
+
+Pdf: - file://Hk6fUL6noCt0Zv0Z
+
+----
+
+Uuid: OWFZPHXrK6oHH0bp

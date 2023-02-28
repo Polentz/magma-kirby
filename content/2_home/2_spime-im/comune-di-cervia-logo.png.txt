@@ -1,5 +1,0 @@
-Uuid: OEufr8lsqLIjPHWF
-
-----
-
-Template: logo

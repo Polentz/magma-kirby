@@ -8,118 +8,120 @@ tabs:
   eventslist:
     label: Evento nella Home
     icon: grid-full
-    sections:
-      filter:
-        type: fields
-        fields:
-          filter:
-            label: "Filtra per:"
-            type: tags
-            width: 1/4
-            min: 1
-            max: 1
-            layout: list
-      date:
-        type: fields
-        fields:
+    columns:
+      main:
+        width: 2/3
+        sections:
           date:
-            label: Data
-            type: date
-            width: 1/2
-            display: DD/MM/YYYY
-      info:
-        type: fields
-        fields:
-          name:
-            label: Titolo dell'evento
-            type: text
-            width: 1/2
-          type:
-            label: Tipologia di evento
-            type: text
-            width: 1/2
-          location:
-            label: Luogo
-            type: text
-            width: 1/2
-      cover:
-        type: fields
-        fields:
+            type: fields
+            fields:
+              date:
+                label: Data
+                type: date
+                width: 1/2
+                display: DD/MM/YYYY
+          info:
+            type: fields
+            fields:
+              name:
+                label: Titolo dell'evento
+                type: text
+                width: 2/3
+              type:
+                label: Tipologia di evento
+                type: text
+                width: 1/3
+              location:
+                label: Luogo
+                type: text
+                width: 1/2
+      sidebar:
+        width: 1/3
+        sections:
+          filter:
+            type: fields
+            fields:
+              filter:
+                label: "Filtra per:"
+                type: tags
+                width: 1/4
+                min: 1
+                max: 1
+                layout: list
           cover:
-            label: Immagine della home
-            type: files
-            width: 1/2
-            template: image
-            uploads: image
-            query: page.images.filterBy('template', 'image')
-            layout: cards
-            size: huge
-            multiple: false
-            image:
-              back: "#000"
-              icon: false
-              ratio: 5/3
-              cover: true
+            type: fields
+            fields:
+              cover:
+                label: Immagine della home
+                type: files
+                template: image
+                uploads: image
+                query: page.images.filterBy('template', 'image')
+                layout: cards
+                size: huge
+                multiple: false
+                image:
+                  back: "#000"
+                  icon: false
+                  ratio: 6/3
+                  cover: true
   page:
     label: Pagina dell'evento
     icon: page
-    sections: 
-      copy:
-        type: fields
-        fields:
-          lefttext:
-            label: false
-            width: 1/2
-            type: writer
-            marks:
-              - bold
-              - italic
-              - underline
-              - strike
-              - link
-              - email
-            nodes: false
-          righttext:
-            label: false
-            width: 1/2
-            type: writer
-            marks:
-              - bold
-              - italic
-              - underline
-              - strike
-              - link
-              - email
-            nodes: false
-      media:
-        type: fields
-        fields:
-          logo:
-            type: files
-            width: 1/2
-            template: logo
-            uploads: logo
-            query: page.images.filterBy('template', 'logo')
-          gallery:
-            type: files
-            width: 1/1
-            label: Immagini
-            layout: cards
-            template: image
-            uploads: image
-            query: page.images.filterBy('template', 'image')
-            size: tiny
-            info: false
-            sortable: true
-            image:
-              back: "#000"
-              icon: false
-              ratio: 4/3
-              cover: true
-          video:
-            type: files
-            label: Video
-            width: 1/2
-            template: video
-            uploads: video
-            query: page.videos
+    columns:
+      main:
+        width: 2/3
+        sections: 
+          copy:
+            type: fields
+            fields:
+              lefttext:
+                label: Testo
+                width: 1/2
+                type: writer
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - strike
+                  - link
+                  - email
+                nodes: false
+              righttext:
+                label: false
+                width: 1/2
+                type: writer
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - strike
+                  - link
+                  - email
+                nodes: false
+      sidebar:
+        width: 1/3
+        sections:
+          media:
+            type: fields
+            fields:
+              logo:
+                type: files
+                label: Loghi
+                template: logo
+                uploads: logo
+                query: page.images.filterBy('template', 'logo')
+              gallery:
+                type: files
+                label: Galleria immagini
+                template: image
+                uploads: image
+                query: page.images.filterBy('template', 'image')
+                info: false
+                sortable: true
+              video:
+                type: files
+                label: Video
+                template: video
+                uploads: video
+                query: page.videos

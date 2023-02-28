@@ -1,0 +1,60 @@
+title: Chi siamo
+options:
+  navigation:
+    status: listed
+    template: all
+
+columns:
+  main:
+    width: 2/3
+    sections: 
+      copy:
+        type: fields
+        fields:
+          lefttext:
+            label: Testo
+            width: 1/2
+            type: writer
+            marks:
+              - bold
+              - italic
+              - underline
+              - strike
+              - link
+              - email
+            nodes: false
+          righttext:
+            label: false
+            width: 1/2
+            type: writer
+            marks:
+              - bold
+              - italic
+              - underline
+              - strike
+              - link
+              - email
+            nodes: false
+  sidebar:
+    width: 1/3
+    sections:
+      menu:
+        type: fields
+        fields:
+          support:
+            label: Sostieni
+            type: url
+          subscribe:
+            label: Newsletter
+            type: url
+      file:
+        type: fields
+        fields:
+          pdf:
+            label: Statuto Associazione
+            type: files
+            template: pdf
+            uploads: pdf
+            max: 1
+
+        

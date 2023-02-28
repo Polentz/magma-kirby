@@ -1,0 +1,10 @@
+title: Image
+
+accept: 
+  extension: pdf
+
+fields:
+  linkName:
+    type: text
+    width: 1/2
+    label: Nome del link

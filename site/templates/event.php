@@ -8,7 +8,9 @@
                 <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
             <?php endforeach ?>
             <?php if ($video = $page->video()->toFile()) : ?>
-                <video controls src="<?= $video->url() ?>"></video>
+                <video controls autoplay muted loop>
+                    <source src="<?= $video->url() ?>" type="video/mp4">
+                </video>
             <?php endif ?>
         </div>
 
