@@ -18,4 +18,4 @@ Support: http://www.magma.zone/
 
 ----
 
-Footer: 2023 © MAGMA
+Footer: 2023

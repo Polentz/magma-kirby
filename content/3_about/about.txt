@@ -10,15 +10,15 @@ Righttext: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 
 ----
 
+Subscribe: 
+
+----
+
+Pdf: 
+
+----
+
 Support: http://www.magma.zone/
-
-----
-
-Subscribe: http://www.magma.zone/
-
-----
-
-Pdf: - file://Hk6fUL6noCt0Zv0Z
 
 ----
 

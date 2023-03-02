@@ -6,7 +6,7 @@
     </div>
 
     <footer>
-        <p><?= $site->footer() ?></p>
+        <p><?= $site->footer() ?> © MAGMA</p>
     </footer>
     <?= js([
         'assets/js/script.js',

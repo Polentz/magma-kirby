@@ -6,7 +6,7 @@ options:
 
 columns:
   main:
-    width: 2/3
+    width: 3/4
     sections: 
       copy:
         type: fields
@@ -23,6 +23,7 @@ columns:
               - link
               - email
             nodes: false
+            placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
           righttext:
             label: false
             width: 1/2
@@ -35,23 +36,28 @@ columns:
               - link
               - email
             nodes: false
+            placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
   sidebar:
-    width: 1/3
+    width: 1/4
     sections:
       menu:
         type: fields
         fields:
           subscribe:
             label: Newsletter
+            placeholder: Link di Mailchimp
             type: url
       file:
         type: fields
         fields:
           pdf:
             label: Statuto Associazione
+            empty: Carica il file PDF
             type: files
             template: pdf
             uploads: pdf
+            multiple: false
             max: 1
+            
 
         

@@ -2,7 +2,7 @@ title: MAGMA
 
 columns:
   main:
-    width: 2/3
+    width: 3/4
     sections:
       pages:
         label: Pagine
@@ -13,23 +13,28 @@ columns:
           - about
           - projects
   sidebar:
-    width: 1/3
+    width: 1/4
     sections:
       global:
         type: fields
         fields:
           instagram:
             label: Instagram
+            placeholder: Link di Instagram
             type: text
           facebook:
             label: Facebook
+            placeholder: Link di Facebook
             type: text
           email:
             label: Email
+            placeholder: Indirizzo email
             type: text
           support:
             label: Sostieni
             type: url
           footer:
             label: Footer
+            placeholder: Anno
+            after: "© MAGMA"
             type: text
