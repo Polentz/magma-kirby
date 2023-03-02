@@ -5,31 +5,38 @@ options:
     template: all
 
 columns:
-  main:
-    width: 2/3
-    sections: 
+  info:
+    width: 3/4
+    sections:
       years:
         type: fields
         fields:
           years:
-            label: Anni
+            label: Periodo di attività
+            placeholder: Periodo di attività
             type: text
             width: 1/2
       info:
         type: fields
         fields:
           name:
-            label: Titolo dell'evento
-            type: text
-            width: 2/3
-          type:
-            label: Tipologia di evento
-            type: text
-            width: 1/3
-          location:
-            label: Luogo
+            label: Nome del progetto
+            placeholder: Nome del progetto
             type: text
             width: 1/2
+          type:
+            label: Tipologia di progetto
+            placeholder: Tipologia di progetto
+            type: text
+            width: 1/2
+          location:
+            label: Informazioni extra
+            placeholder: Informazioni extra
+            type: text
+            width: 1/2
+  main:
+    width: 3/4
+    sections: 
       copy:
         type: fields
         fields:
@@ -45,6 +52,7 @@ columns:
               - link
               - email
             nodes: false
+            placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
           righttext:
             label: false
             width: 1/2
@@ -57,8 +65,9 @@ columns:
               - link
               - email
             nodes: false
+            placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
   sidebar:
-    width: 1/3
+    width: 1/4
     sections:
       media:
         type: fields

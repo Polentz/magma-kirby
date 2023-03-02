@@ -10,15 +10,15 @@ Name: Elementi
 
 ----
 
-Type: RASSEGNA DI MUSICA CONTEMPORANEA
+Type: Rassegna di musica contemporanea
 
 ----
 
-Location: A CURA DI MU E MAGMA
+Location: A cura di MU e MAGMA
 
 ----
 
-Lefttext: <p>ELEMENTI, la rassegna di musica contemporanea ideata dalle ssociazioni MU e MAGMA durante il lockdown del 2020 con l’intento di ritrovare una dimensione performativa immersiva all’interno di paesaggi naturali dall’elevata potenza emozionale che caratterizzano il territorio romagnolo.</p>
+Lefttext: <p>ELEMENTI, la rassegna di musica contemporanea ideata dalle ssociazioni <a href="https://www.mmmu.it/" target="_blank" title="MU" rel="noopener noreferrer">MU</a> e MAGMA durante il lockdown del 2020 con l’intento di ritrovare una dimensione performativa immersiva all’interno di paesaggi naturali dall’elevata potenza emozionale che caratterizzano il territorio romagnolo.</p><p>Dopo il successo delle prime due edizioni, che hanno fatto scoprire al pubblico il molo, la pineta e la Salina di Cervia e il parco fluviale di Cannuzzo, la rassegna 2022- terza edizione - ha espanso il suo raggio d’azione proponendo un calendario di dieci appuntamenti che hanno attraversato il territorio della Romagna, potenziando così il legame tra suono, arte e Natura e consolidando il progetto come un appuntamento culturale ricorrente nel corso del periodo estivo,  itinerante e fortemente identitario. Tra Faenza, Cervia, Cesenatico e altri sei comuni della Bassa Romagna (Lugo, Fusignano, Cotignola, Bagnacavallo, Bagnara di Romagna, Massa Lombarda), i luoghi simbolici selezionati si sono trasformati in un affascinante palcoscenico in cui gli spettacoli proposti hanno ricreato una dimensione quasi surreale.</p><p>Punto di riferimento per la filiera del settore stradale Asphaltica è stato un crescendo di successi a partire dal 2003, anno della sua prima edizione.</p><p>Il richiamo di pubblico da parte della rassegna Elementi è stato un crescendo di successo a partire dal 2020 - anno della sua prima edizione - divenendo un punto di riferimento culturale per un target trasversale, composto da  giovani, famiglie e da un turismo nazionale attirato dal contenuto artistico in relazione con luoghi particolari, suggestivi ed accessibili in maniera extra ordinaria.</p><p>La rassegna Elementi, ad oggi riconosciuta a livello nazionale, si prefigge come obiettivo 2023 quello di espandere il format a livello territoriale: sia in regione che su scala nazionale.</p>
 
 ----
 
