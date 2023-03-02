@@ -2,7 +2,7 @@
     <?php if ($page->isHomePage()) : ?>
         <div class="headline-cover">
             <?php if ($cover = $event->cover()->toFile()) : ?>
-                <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>">
+                <img src="<?= $cover->crop(1200, 750, 72)->url() ?>" alt="<?= $cover->alt() ?>">
             <?php endif ?>
         </div>
     <?php endif ?>
@@ -15,9 +15,9 @@
             <?php endif ?>
         </div>
         <div class="title">
-            <?php if ($page->isHomePage()) : ?>
+            <?php if ($page->isHomePage() && $event->pagestatus()->isTrue()) : ?>
                 <a href="<?= $event->url() ?>"><h2><?= $event->name() ?></h2></a>
-            <?php elseif ($page->pages()) : ?>
+            <?php else : ?>
                 <h2><?= $event->name() ?></h2>
             <?php endif ?>
             <p><?= $event->type() ?></p>

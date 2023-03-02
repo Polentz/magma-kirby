@@ -136,3 +136,12 @@ tabs:
                 template: video
                 uploads: video
                 query: page.videos
+          pagestatus:
+            type: fields
+            fields:
+              pagestatus:
+                label: La pagina è pronta?
+                type: toggle
+                text: 
+                  - "no"
+                  - "sì"

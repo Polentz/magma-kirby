@@ -2,7 +2,7 @@ Title: Future Event
 
 ----
 
-Date: 2023-03-15
+Date: 2024-03-15
 
 ----
 
@@ -10,11 +10,11 @@ Name: Future Event
 
 ----
 
-Type: Dj Set
+Type: Live set with candies
 
 ----
 
-Location: Twin Peaks
+Location: Somewhere
 
 ----
 
@@ -23,6 +23,10 @@ Filter: Dj Set
 ----
 
 Cover: - file://wKV7qgJIe0N0rqnI
+
+----
+
+Pagestatus: false
 
 ----
 

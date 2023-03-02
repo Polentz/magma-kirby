@@ -1,0 +1,61 @@
+Title: Annamaria Ajmone + Glauco Salvo
+
+----
+
+Date: 2022-09-08
+
+----
+
+Name: Annamaria Ajmone + Glauco Salvo
+
+----
+
+Type: Performance
+
+----
+
+Location: ELEMENTI / Parco di Levante - Cesenatico
+
+----
+
+Filter: Performance
+
+----
+
+Cover: - file://fTVnwwgzOtxKDlAj
+
+----
+
+Lefttext: <p>Nel cuore del Parco di Levante di Cesenatico la danzatrice e coreografa Annamaria Ajmone e il musicista Glauco Salvo si esibiranno in una performance live mettendo in dialogo suono e movimento.</p><p>ELEMENTI è una rassegna di musica contemporanea ideata dalle associazioni <a href="https://www.mmmu.it" target="_blank" rel="noopener noreferrer">MU</a> e MAGMA durante il lockdown del 2020 con l’intento di ritrovare una dimensione performativa immersiva all’interno di paesaggi naturali dall’elevata potenza emozionale che caratterizzano il territorio romagnolo.</p><p>La terza edizione di ELEMENTI è realizzata in collaborazione con il Comune di Cervia e il Parco della Salina di Cervia, l’Unione dei Comuni della Bassa Romagna, Comune di Lugo, Comune di Fusignano, Comune di Cotignola, Comune di Bagnacavallo, Comune di Bagnara di Romagna, Comune di Massa Lombarda, Comune di Cesenatico, Comune di Faenza.</p>
+
+----
+
+Righttext: <p><a href="https://fieldstudies.it/" target="_blank" rel="noopener noreferrer">Glauco Salvo</a> è un musicista e artista del suono attivo nell’ambito della musica indipendente e sperimentale. La sua ricerca è incentrata sull’esplorazione di nuovi percorsi tra folk, rock e musica sperimentale, attraverso l’utilizzo di strumenti a corda, elettronica e dispositivi di registrazione e riproduzione del suono.<br>Combina l’uso di registrazioni ambientali, suoni elettroacustici, sintesi modulare, interferenze radio, registratori a cassetta con l’interesse nei confronti della spazializzazione del suono.<br><br><a href="https://annamariaajmone.com/" target="_blank" rel="noopener noreferrer">Annamaria Ajmone</a> è danzatrice e coreografa. Al centro della sua ricerca c’è il corpo inteso come materia plasmabile e mutevole capace di trasformare spazi in luoghi creando parallelismi e sovrapposizioni temporali. Si avvale per le proprie produzioni di collaboratori con cui condivide il processo creativo, coinvolgendo così diversi immagini e visioni.</p>
+
+----
+
+Logo: 
+
+----
+
+Gallery:
+
+- file://6vTpuFmHNBeDPImL
+- file://Glg8VlS7E8tQNsRE
+- file://fTVnwwgzOtxKDlAj
+- file://TlX5cVYxfgfYC9pG
+- file://VUEZKNfuXhugxTJl
+- file://8vfR4REAH62e8X0c
+- file://k5OgovrxqJQLgTOt
+
+----
+
+Video: 
+
+----
+
+Pagestatus: true
+
+----
+
+Uuid: rtzhplgmnbHmvWPv
