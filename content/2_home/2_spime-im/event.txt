@@ -30,7 +30,7 @@ Lefttext: <p>Sabato 8 ottobre il MAR – Museo d’Arte della Città di Ravenna 
 
 ----
 
-Righttext: <p><a href="Spime.im" target="_blank" title="Spime.im" rel="noopener noreferrer">Spime.im</a> (Davide Tomat, Gabriele Ottino, Marco Casolati, Matteo Marson) è un collettivo artistico che ha lo scopo di indagare, attraverso progetti transmediali, le estetiche e i linguaggi derivati dall’affermarsi della realtà digitale. Spime.im usa la tecnologia, l’arte tridimensionale e la musica elettronica per tessere esperienze audio- video immersive, che esplorano i confini dell’identità, della corporeità e della percezione, in un mondo in cui il nostro doppelgänger virtuale assume una posizione sempre più intensa, protagonista e totalizzante.</p>
+Righttext: <p><a href="https://spime.im/" target="_blank" title="Spime.im" rel="noopener noreferrer">Spime.im</a> (Davide Tomat, Gabriele Ottino, Marco Casolati, Matteo Marson) è un collettivo artistico che ha lo scopo di indagare, attraverso progetti transmediali, le estetiche e i linguaggi derivati dall’affermarsi della realtà digitale. Spime.im usa la tecnologia, l’arte tridimensionale e la musica elettronica per tessere esperienze audio- video immersive, che esplorano i confini dell’identità, della corporeità e della percezione, in un mondo in cui il nostro doppelgänger virtuale assume una posizione sempre più intensa, protagonista e totalizzante.</p>
 
 ----
 

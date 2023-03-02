@@ -1,20 +1,17 @@
 <header>
     <div class="menu">
         <div class="menu-block">
+            <h1 class="page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
             <?php if ($page->isHomePage()) : ?>
-                <h1 class="page-title menu-link"><?= $page->title() ?></h1>
                 <?php foreach ($filters as $filter) : ?>
                     <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
                 <?php endforeach ?>
             <?php endif ?>
-
             <?php if ($page->is('about')) : ?>
-                <h1 class="page-title"><?= $page->title() ?></h1>
-                <a class="menu-link" href="<?= $page->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
+                <a class="menu-link" href="<?= $site->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
                 <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
             <?php endif ?>
             <?php if ($page->is('projects')) : ?>
-                <h1 class="page-title menu-link"><?= $page->title() ?></h1>
                 <?php foreach ($page->children()->listed() as $project) : ?>
                     <a class="menu-link js-href" href="#<?= $project->title()->slug() ?>"><?= $project->title() ?></a>
                 <?php endforeach ?>
