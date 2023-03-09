@@ -30,6 +30,7 @@ const handlePagelinks = () => {
 
 const images = document.querySelectorAll(".gallery-wrapper img, .gallery-wrapper video");
 const texts = document.querySelectorAll(".info-wrapper");
+const titles = document.querySelectorAll(".title");
 const handleBlur = (images, texts) => {
     images.forEach(img => {
         img.addEventListener("click", () => {
@@ -39,6 +40,20 @@ const handleBlur = (images, texts) => {
             texts.forEach(txt => {
                 txt.classList.toggle("blur");
             });
+            titles.forEach(title => {
+                title.style.cursor = "pointer";
+            })
+        });
+    });
+    titles.forEach(title => {
+        title.addEventListener("click", () => {
+            images.forEach(img => {
+                img.classList.remove("unblur");
+            });
+            texts.forEach(txt => {
+                txt.classList.remove("blur");
+            });
+            title.style.cursor = "auto";
         });
     });
 };

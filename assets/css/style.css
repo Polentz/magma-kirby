@@ -295,7 +295,7 @@ main {
     width: 100%;
     opacity: .85;
     filter: blur(72px);
-    transition: opacity .5s ease, filter .25s ease-in-out;
+    transition: opacity 1s ease, filter .5s ease-in-out;
 }
 
 .headline-cover img:hover {
@@ -319,7 +319,7 @@ main {
     width: 100%;
     opacity: .85;
     filter: blur(72px);
-    transition: opacity .5s ease, filter .25s ease-in-out;
+    transition: opacity 1s ease, filter .5s ease-in-out;
 }
 
 .gallery-wrapper video {

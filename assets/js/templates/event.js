@@ -21,7 +21,7 @@ const handleBlur = (images, texts, title) => {
             txt.classList.remove("blur");
         });
         title.style.cursor = "auto";
-    })
+    });
 };
 
 handleBlur(images, texts, title);
