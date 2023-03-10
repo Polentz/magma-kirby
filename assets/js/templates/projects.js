@@ -58,18 +58,19 @@ const handleBlur = (images, texts) => {
     });
 };
 
-const projects = document.querySelectorAll(".project-wrapper");
+const projects = document.querySelectorAll(".section-wrapper");
 const handleHeight = () => {
     projects.forEach(project => {
         const sectionText = project.querySelector(".info-section");
         const sectionImages = project.querySelector(".gallery-section");
         const textHeight = sectionText.offsetHeight;
         let sectionHeight = textHeight;
-        console.log(sectionHeight)
-        sectionImages.style.setProperty("--sectionHeight", `${sectionHeight}` + "px");
+        console.log(sectionHeight);
+        sectionImages.style.setProperty("--section-height", `${sectionHeight}px`);
     });
 };
 
 handleBlur(images, texts);
 handlePagelinks(menuLinks, resetCurrent);
-// handleHeight();
+window.addEventListener("resize", handleHeight);
+handleHeight();

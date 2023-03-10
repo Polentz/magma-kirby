@@ -2,8 +2,10 @@
 <?= snippet('menu') ?>
 
 <main>
-    <section class="about-info">
-        <?= snippet('info') ?>
+    <section class="section-wrapper">
+        <div class="about-info">
+            <?= snippet('info') ?>
+        </div>
     </section>
 </main>
 

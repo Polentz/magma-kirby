@@ -28,7 +28,7 @@ const handleBlur = (covers, texts, overlay) => {
 
 const filters = document.querySelectorAll(".filter");
 const events = document.querySelectorAll(".headline-block");
-const resetFilters = document.querySelector(".page-title");
+const resetFilters = document.querySelectorAll(".page-title");
 const handleFilters = (filters, element, resetFilters, elements) => {
     filters.forEach(filter => {
         filter.addEventListener("click", (e) => {
@@ -51,13 +51,15 @@ const handleFilters = (filters, element, resetFilters, elements) => {
             });
         });
     });
-    resetFilters.addEventListener("click", () => {
-        elements.forEach(el => {
-            el.classList.add("unfiltered");
-            el.classList.remove("unfiltered");
-        });
-        filters.forEach(all => {
-            all.classList.remove("current");
+    resetFilters.forEach(reset => {
+        reset.addEventListener("click", () => {
+            elements.forEach(el => {
+                el.classList.add("unfiltered");
+                el.classList.remove("unfiltered");
+            });
+            filters.forEach(all => {
+                all.classList.remove("current");
+            });
         });
     });
 };

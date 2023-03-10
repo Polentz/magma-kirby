@@ -21,7 +21,7 @@ document.addEventListener("mousemove", (event) => {
     // };
     defaultCursorElements.forEach(el => {
         el.addEventListener("mouseenter", () => {
-            innerCursor.style.transform = "scale(1)";
+            innerCursor.style.transform = "scale(0.95)";
         });
         el.addEventListener("mouseleave", () => {
             innerCursor.style.transform = "scale(0)";

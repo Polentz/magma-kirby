@@ -1,0 +1,25 @@
+<?php if ($page->isHomePage()) : ?>
+    <div class="submenu-wrapper on-mobile">
+        <h1 class="menu-link page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
+        <?php foreach ($filters as $filter) : ?>
+            <?php if ($filter->isNotEmpty()) : ?>
+                <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
+            <?php endif ?>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>
+
+<?php if ($page->is('about')) : ?>
+    <div class="submenu-wrapper on-mobile">
+        <a class="menu-link" href="<?= $site->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
+        <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
+    </div>
+<?php endif ?>
+
+<?php if ($page->is('projects')) : ?>
+    <div class="submenu-wrapper on-mobile">
+        <?php foreach ($page->children()->listed() as $project) : ?>
+            <a class="menu-link js-href" href="#<?= $project->title()->slug() ?>"><?= $project->title() ?></a>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>

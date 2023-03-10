@@ -1,16 +1,18 @@
 <?= snippet('header') ?>
 <?= snippet('menu') ?>
 
-<?php foreach($page->children()->listed() as $project) : ?>
-    <main id="<?= $project->title()->slug() ?>" class="project-wrapper">
-        <section class="gallery-section">
-            <?= snippet('gallery', ['page' => $project]) ?>
+<main>
+    <?php foreach($page->children()->listed() as $project) : ?>
+        <section id="<?= $project->title()->slug() ?>" class="section-wrapper">
+            <div class="gallery-section">
+                <?= snippet('gallery', ['page' => $project]) ?>
+            </div>
+            <div class="info-section">
+                <?= snippet('headline', ['event' => $project]) ?>
+                <?= snippet('info', ['page' => $project]) ?>
+            </div>
         </section>
-        <section class="info-section">
-            <?= snippet('headline', ['event' => $project]) ?>
-            <?= snippet('info', ['page' => $project]) ?>
-        </section>
-    </main>
-<?php endforeach ?>
+    <?php endforeach ?>
+</main>
 
 <?= snippet('footer') ?>
