@@ -11,6 +11,14 @@ div::-moz-selection {
     background: transparent;
 }
 
+p::-moz-selection,
+h1::-moz-selection,
+a::-moz-selection,
+div::-moz-selection {
+    color: #000;
+    background: transparent;
+}
+
 p::selection,
 h1::selection,
 a::selection,

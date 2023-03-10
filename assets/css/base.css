@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
@@ -138,11 +139,13 @@ table {
 }
 
 html {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 :after,
 :before {
+    -webkit-box-sizing: inherit;
     box-sizing: inherit;
 }
 
