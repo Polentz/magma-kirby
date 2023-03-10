@@ -4,12 +4,15 @@
         </svg>
         <p><a href="<?= $site->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a></p>
     </div>
-
+    <div id="cursor" class="cursor">
+        <div class="inner-cursor"></div>
+    </div>
     <footer>
         <p><?= $site->footer() ?> © MAGMA</p>
     </footer>
     <?= js([
         'assets/js/script.js',
+        'assets/js/cursor.js',
         '@auto',
     ]) ?>
 </body>

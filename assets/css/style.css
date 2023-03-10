@@ -1,6 +1,6 @@
 :root {
     --doc-height: 100%;
-    --txt-color: #000;
+    --txt-color: #000000;
     --bg-color: #efefef;
     --white: #fff;
     --normal-txt-size: .8rem;
@@ -12,6 +12,7 @@
     /* x = left and right */
     --main-margin-x: 5vw;
     --random-left: 55%;
+    --cursor-size: 5rem;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
     line-height: 1.5;
     background-color: var(--bg-color);
     position: relative;
+    cursor: none;
 }
 
 em {
@@ -147,6 +149,7 @@ header {
     opacity: 0;
     pointer-events: none;
     transition: all .5s ease;
+    order: -1;
 }
 
 /* .menu .menu-block:nth-child(2) {
@@ -179,7 +182,7 @@ header {
 
 main {
     padding: var(--main-margin-y) var(--main-margin-x);
-    min-height: var(--doc-height);
+    /* min-height: var(--doc-height); */
 }
 
 .overlay {
@@ -245,6 +248,7 @@ main {
 
 .headline-data div {
     width: fit-content;
+    margin-right: var(--general-margin);
 }
 
 .headline-data .date h3 {
@@ -309,9 +313,13 @@ main {
     filter: blur(0px);
 }
 
+.gallery-section {
+    min-height: var(--sectionHeight);
+}
+
 .gallery-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
 }
 
@@ -343,7 +351,7 @@ main {
 }
 
 .gallery-wrapper img:first-of-type {
-    grid-column: 3;
+    grid-column-start: 3;
 }
 
 .gallery-wrapper video {
@@ -416,8 +424,70 @@ main {
     position: relative;
 }
 
+.canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--doc-height);
+    z-index: -1;
+    will-change: filter;
+    -webkit-filter: blur(24px);
+    -moz-filter: blur(24px);
+    -ms-filter: blur(24px);
+    filter: blur(24px);
+    pointer-events: none;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--doc-height);
+    vertical-align: bottom;
+}
+
+.cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    mix-blend-mode: plus-lighten;
+    background-color: var(--white);
+}
+
+.inner-cursor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    transform-origin: center;
+    width: var(--cursor-size);
+    height: var(--cursor-size);
+    z-index: 999;
+    pointer-events: none;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    mix-blend-mode: difference;
+    transition: transform .25s ease;
+}
+
+.on-mobile {
+    display: none;
+}
+
 @media screen and (max-width: 720px) {
-    @keyframes pulse {
+    /* @keyframes pulse {
         0% {
             opacity: .65;
             filter: blur(72px);
@@ -427,10 +497,62 @@ main {
             opacity: 1;
             filter: blur(32px);
         }
+    } */
+
+    body {
+        cursor: auto;
     }
 
-    .menu-link {
+    .cursor {
         display: none;
+    }
+
+    .on-mobile {
+        display: flex;
+    }
+
+    .menu,
+    .submenu-wrapper {
+        border: solid 2px var(--txt-color);
+        border-radius: 80px;
+        background: #efefefde;
+        backdrop-filter: blur(20px);
+    }
+
+    .menu .menu-link:not(:first-child) {
+        display: none;
+    }
+
+    .menu-block {
+        border: none;
+        background: transparent;
+        backdrop-filter: blur(0px);
+    }
+
+    .menu .menu-block:first-of-type {
+        justify-content: flex-start;
+    }
+
+    .menu .menu-block:last-of-type {
+        justify-content: flex-end;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    .submenu .menu-block {
+        flex-wrap: wrap;
+        padding: 0;
+        gap: calc(var(--general-margin)/2);
+        flex-direction: column-reverse;
+    }
+
+    .submenu-wrapper {
+        width: 100%;
+        justify-content: space-between;
+        padding: var(--normal-txt-size) var(--large-txt-size);
+        gap: var(--main-margin-x);
     }
 
     .headline-data .title {
@@ -459,5 +581,15 @@ main {
 
     .info-wrapper {
         flex-direction: column;
+    }
+
+    .gallery-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--general-margin);
+    }
+
+    .gallery-wrapper img {
+        flex: 1 0;
     }
 }

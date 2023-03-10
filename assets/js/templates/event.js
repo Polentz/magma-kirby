@@ -20,7 +20,7 @@ const handleBlur = (images, texts, title) => {
         texts.forEach(txt => {
             txt.classList.remove("blur");
         });
-        title.style.cursor = "auto";
+        title.style.cursor = "none";
     });
 };
 

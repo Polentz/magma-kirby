@@ -1,7 +1,7 @@
 <header>
     <div class="menu">
         <div class="menu-block">
-            <h1 class="page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
+            <h1 class="menu-link page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
             <?php if ($page->isHomePage()) : ?>
                 <?php foreach ($filters as $filter) : ?>
                     <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
@@ -18,10 +18,10 @@
             <?php endif ?>
         </div>
         <div class="menu-block">
+            <a id="menu-open" class="menu-link">Menu</a>
             <svg id="menu-close" class="menu-close" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 13L13 1.00001M1 1L13 13"/>
             </svg>
-            <a id="menu-open" class="menu-link">Menu</a>
         </div>
     </div>
     <div class="submenu">
@@ -49,6 +49,22 @@
                 <?php foreach ($pages->listed()->not('coming-soon') as $page) : ?>
                     <a href="<?= $page->url() ?>" class="menu-link <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></a>
                 <?php endforeach ?>                  
+            </div>
+            <div class="submenu-wrapper on-mobile">
+                <?php if ($page->isHomePage()) : ?>
+                    <?php foreach ($filters as $filter) : ?>
+                        <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
+                    <?php endforeach ?>
+                <?php endif ?>
+                <?php if ($page->is('about')) : ?>
+                    <a class="menu-link" href="<?= $site->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
+                    <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
+                <?php endif ?>
+                <?php if ($page->is('projects')) : ?>
+                    <?php foreach ($page->children()->listed() as $project) : ?>
+                        <a class="menu-link js-href" href="#<?= $project->title()->slug() ?>"><?= $project->title() ?></a>
+                    <?php endforeach ?>
+                <?php endif ?>
             </div>
         </div>
     </div>

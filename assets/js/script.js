@@ -5,11 +5,10 @@ const documentHeight = () => {
 window.addEventListener("resize", documentHeight);
 documentHeight();
 
-
 const menuOpen = document.getElementById("menu-open");
 const menuClose = document.getElementById("menu-close");
 const submenu = document.querySelector(".submenu");
-const handleSubmenu = (open, submenu, close) => {
+const handleMenu = (open, submenu, close) => {
     open.addEventListener("click", () => {
         submenu.classList.toggle("show");
         close.classList.toggle("show");
@@ -20,4 +19,4 @@ const handleSubmenu = (open, submenu, close) => {
     });
 };
 
-handleSubmenu(menuOpen, submenu, menuClose);
+handleMenu(menuOpen, submenu, menuClose);

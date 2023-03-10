@@ -53,10 +53,23 @@ const handleBlur = (images, texts) => {
             texts.forEach(txt => {
                 txt.classList.remove("blur");
             });
-            title.style.cursor = "auto";
+            title.style.cursor = "none";
         });
+    });
+};
+
+const projects = document.querySelectorAll(".project-wrapper");
+const handleHeight = () => {
+    projects.forEach(project => {
+        const sectionText = project.querySelector(".info-section");
+        const sectionImages = project.querySelector(".gallery-section");
+        const textHeight = sectionText.offsetHeight;
+        let sectionHeight = textHeight;
+        console.log(sectionHeight)
+        sectionImages.style.setProperty("--sectionHeight", `${sectionHeight}` + "px");
     });
 };
 
 handleBlur(images, texts);
 handlePagelinks(menuLinks, resetCurrent);
+// handleHeight();
