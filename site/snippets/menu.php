@@ -48,7 +48,7 @@
                 </a>
             </div>
             <div class="submenu-wrapper">
-                <?php foreach ($pages->listed()->not('coming-soon') as $page) : ?>
+                <?php foreach ($pages->unlisted()->not('error') as $page) : ?>
                     <a href="<?= $page->url() ?>" class="menu-link <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></a>
                 <?php endforeach ?>
             </div>
