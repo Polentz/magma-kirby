@@ -359,8 +359,8 @@ main {
 .headline-cover img {
     width: 100%;
     opacity: .85;
-    -webkit-filter: blur(72px);
-    filter: blur(72px);
+    -webkit-filter: blur(56px);
+    filter: blur(56px);
     -webkit-transition: opacity 1s ease, -webkit-filter .5s ease-in-out;
     transition: opacity 1s ease, -webkit-filter .5s ease-in-out;
     -o-transition: opacity 1s ease, filter .5s ease-in-out;
@@ -370,8 +370,8 @@ main {
 
 .headline-cover img:hover {
     opacity: .95;
-    -webkit-filter: blur(32px);
-    filter: blur(32px);
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
     cursor: pointer;
 }
 
@@ -397,8 +397,8 @@ main {
 .gallery-wrapper img {
     width: 100%;
     opacity: .85;
-    -webkit-filter: blur(72px);
-    filter: blur(72px);
+    -webkit-filter: blur(56px);
+    filter: blur(56px);
     -webkit-transition: opacity 1s ease, -webkit-filter .5s ease-in-out;
     transition: opacity 1s ease, -webkit-filter .5s ease-in-out;
     -o-transition: opacity 1s ease, filter .5s ease-in-out;
@@ -414,8 +414,8 @@ main {
     grid-column: 1;
     grid-column-end: 3;
     opacity: .5;
-    -webkit-filter: blur(72px);
-    filter: blur(72px);
+    -webkit-filter: blur(56px);
+    filter: blur(56px);
     -webkit-transition: opacity .5s ease, -webkit-filter .25s ease-in-out;
     transition: opacity .5s ease, -webkit-filter .25s ease-in-out;
     -o-transition: opacity .5s ease, filter .25s ease-in-out;
@@ -426,8 +426,8 @@ main {
 .gallery-wrapper img:hover,
 .gallery-wrapper video:hover {
     opacity: .95;
-    -webkit-filter: blur(32px);
-    filter: blur(32px);
+    -webkit-filter: blur(16px);
+    filter: blur(16px);
     cursor: pointer;
 }
 
@@ -681,16 +681,15 @@ main {
         animation: pulse 2s linear alternate-reverse infinite;
     }
 
-    .headline-cover img:nth-of-type(odd) {
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-    }
-
     .headline-cover.unblur img {
         -webkit-animation: none;
         animation: none;
+    }
+
+    .headline-data.blur {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
     }
 
     .section-wrapper {
@@ -716,6 +715,12 @@ main {
         flex-direction: column;
     }
 
+    .info-wrapper.blur {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+    }
+
     .gallery-section {
         min-height: unset !important;
     }
@@ -737,13 +742,6 @@ main {
         -webkit-filter: blur(0px);
         filter: blur(0px);
         animation: pulse 2s linear alternate-reverse infinite;
-    }
-
-    .gallery-wrapper img:nth-of-type(odd) {
-        -webkit-animation-delay: 1s;
-        animation-delay: 1s;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
     }
 
     .gallery-wrapper img.unblur,
