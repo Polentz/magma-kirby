@@ -19,4 +19,20 @@ const handleMenu = (open, submenu, close) => {
     });
 };
 
+const unblurOnScroll = () => {
+    const images = document.querySelectorAll(".headline-cover, img, video");
+    for (let i = 0; i < images.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = images[i].getBoundingClientRect().top;
+        const elementVisible = 300;
+        if (elementTop < windowHeight - elementVisible) {
+            images[i].classList.add("scroll-unblur");
+        } else {
+            images[i].classList.remove("scroll-unblur");
+        }
+    }
+}
+
 handleMenu(menuOpen, submenu, menuClose);
+window.addEventListener("scroll", unblurOnScroll);
+unblurOnScroll();

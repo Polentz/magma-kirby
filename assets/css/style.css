@@ -661,6 +661,17 @@ main {
         min-width: unset;
     }
 
+    .headline-block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        gap: var(--general-margin);
+    }
+
     .headline-data .title {
         max-width: auto;
     }
@@ -675,15 +686,6 @@ main {
 
     .headline-cover img {
         width: 100%;
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-        opacity: 1;
-        animation: pulse 2s linear alternate-reverse infinite;
-    }
-
-    .headline-cover.unblur img {
-        -webkit-animation: none;
-        animation: none;
     }
 
     .headline-data.blur {
@@ -736,40 +738,27 @@ main {
         grid-column-start: 2;
     }
 
-    .gallery-wrapper video,
-    .gallery-wrapper img {
+    .headline-cover img,
+    .gallery-wrapper img,
+    .gallery-wrapper video {
+        -webkit-transition: opacity 2s ease, -webkit-filter 1s ease-in-out;
+        transition: opacity 2s ease, -webkit-filter 1s ease-in-out;
+        -o-transition: opacity 2s ease, filter 1s ease-in-out;
+        transition: opacity 2s ease, filter 1s ease-in-out;
+        transition: opacity 2s ease, filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+    }
+
+    .headline-cover.scroll-unblur img,
+    .gallery-wrapper img.scroll-unblur,
+    .gallery-wrapper video.scroll-unblur {
         opacity: 1;
         -webkit-filter: blur(0px);
         filter: blur(0px);
-        animation: pulse 2s linear alternate-reverse infinite;
-    }
-
-    .gallery-wrapper img.unblur,
-    .gallery-wrapper video.unblur {
-        -webkit-animation: none;
-        animation: none;
     }
 }
 
 
 @media screen and (max-width: 420px) {
-    @keyframes pulse {
-        0% {
-            opacity: .65;
-            filter: blur(32px);
-        }
-
-        50% {
-            opacity: 1;
-            filter: blur(0px);
-        }
-
-        100% {
-            opacity: 1;
-            filter: blur(0px);
-        }
-    }
-
     .menu .menu-block:first-of-type {
         display: none;
     }
@@ -785,6 +774,14 @@ main {
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
+    }
+
+    .info-section .headline-block {
+        margin-bottom: calc(var(--main-margin-y)/2);
+    }
+
+    .headline-data .title {
+        margin-bottom: 0;
     }
 
     .gallery-wrapper {
