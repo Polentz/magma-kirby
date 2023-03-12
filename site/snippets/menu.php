@@ -2,7 +2,7 @@
     <div class="menu">
         <div class="menu-block">
             <h1 class="menu-link page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
-            <?php if ($page->isHomePage()) : ?>
+            <?php if ($page->is('home')) : ?>
                 <?php foreach ($filters as $filter) : ?>
                     <?php if ($filter->isNotEmpty()) : ?>
                         <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>

@@ -1,3 +1,10 @@
+const documentHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty("--doc-height", `${window.innerHeight}px`)
+};
+window.addEventListener("resize", documentHeight);
+documentHeight();
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
 const particlesArray = [];

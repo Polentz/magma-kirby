@@ -562,17 +562,22 @@ main {
 }
 
 @media screen and (max-width: 720px) {
-    /* @keyframes pulse {
+    @keyframes pulse {
         0% {
             opacity: .65;
-            filter: blur(72px);
+            filter: blur(32px);
+        }
+
+        50% {
+            opacity: 1;
+            filter: blur(0px);
         }
 
         100% {
             opacity: 1;
-            filter: blur(32px);
+            filter: blur(0px);
         }
-    } */
+    }
 
     body {
         cursor: auto;
@@ -592,6 +597,7 @@ main {
         width: calc(100% - var(--general-margin));
         top: calc(var(--general-margin)/2);
         left: calc(var(--general-margin)/2);
+        pointer-events: none;
     }
 
     footer {
@@ -599,6 +605,10 @@ main {
         -webkit-transform: none;
         -ms-transform: none;
         transform: none;
+    }
+
+    .menu {
+        pointer-events: all;
     }
 
     .menu,
@@ -673,26 +683,29 @@ main {
     }
 
     .headline-cover {
-        left: 50% !important;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-        width: 90%;
+        width: 100%;
+        position: static;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
     }
 
     .headline-cover img {
-        animation: pulse 3s linear alternate-reverse infinite;
+        width: 100%;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+        animation: pulse 2s linear alternate-reverse infinite;
     }
 
     .headline-cover img:nth-of-type(odd) {
         -webkit-animation-delay: 1s;
         animation-delay: 1s;
-        -webkit-animation-duration: 4s;
-        animation-duration: 4s;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
     }
 
     .headline-cover.unblur img {
-        /* animation-play-state: paused; */
         -webkit-animation: none;
         animation: none;
     }

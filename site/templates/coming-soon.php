@@ -76,4 +76,9 @@
     <div class="canvas-container">
         <canvas id="canvas"></canvas>
     </div>
-<?= snippet('footer') ?>
+    <?= js([
+        '@auto',
+    ]) ?>
+</body>
+
+</html>

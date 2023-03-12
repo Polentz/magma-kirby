@@ -1,4 +1,4 @@
-<?php if ($page->isHomePage()) : ?>
+<?php if ($page->is('home')) : ?>
     <div class="submenu-wrapper on-mobile">
         <h1 class="menu-link page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
         <?php foreach ($filters as $filter) : ?>

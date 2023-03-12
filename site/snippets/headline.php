@@ -1,5 +1,5 @@
 <div class="headline-block" data-filter="<?= $event->filter()->slug() ?>">
-    <?php if ($page->isHomePage()) : ?>
+    <?php if ($page->is('home')) : ?>
         <div class="headline-cover">
             <?php if ($cover = $event->cover()->toFile()) : ?>
                 <img src="<?= $cover->crop(1200, 750, 72)->url() ?>" alt="<?= $cover->alt() ?>">
@@ -15,7 +15,7 @@
             <?php endif ?>
         </div>
         <div class="title">
-            <?php if ($page->isHomePage() && $event->pagestatus()->isTrue()) : ?>
+            <?php if ($page->is('home') && $event->pagestatus()->isTrue()) : ?>
                 <a href="<?= $event->url() ?>"><h2><?= $event->name() ?></h2></a>
             <?php else : ?>
                 <h2><?= $event->name() ?></h2>
