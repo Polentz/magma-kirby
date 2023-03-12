@@ -562,23 +562,6 @@ main {
 }
 
 @media screen and (max-width: 720px) {
-    @keyframes pulse {
-        0% {
-            opacity: .65;
-            filter: blur(32px);
-        }
-
-        50% {
-            opacity: 1;
-            filter: blur(0px);
-        }
-
-        100% {
-            opacity: 1;
-            filter: blur(0px);
-        }
-    }
-
     body {
         cursor: auto;
     }
@@ -710,11 +693,31 @@ main {
         animation: none;
     }
 
+    .section-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: var(--general-margin);
+    }
+
+    .section-wrapper:not(:last-of-type) {
+        margin-bottom: var(--main-margin-y);
+    }
+
+    .info-section {
+        width: 95%;
+        position: static;
+        padding-bottom: 0;
+    }
+
     .info-wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .gallery-section {
+        min-height: unset !important;
     }
 
     .gallery-wrapper {
@@ -727,10 +730,48 @@ main {
         grid-column: 2;
         grid-column-start: 2;
     }
+
+    .gallery-wrapper video,
+    .gallery-wrapper img {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        animation: pulse 2s linear alternate-reverse infinite;
+    }
+
+    .gallery-wrapper img:nth-of-type(odd) {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+    }
+
+    .gallery-wrapper img.unblur,
+    .gallery-wrapper video.unblur {
+        -webkit-animation: none;
+        animation: none;
+    }
 }
 
 
 @media screen and (max-width: 420px) {
+    @keyframes pulse {
+        0% {
+            opacity: .65;
+            filter: blur(32px);
+        }
+
+        50% {
+            opacity: 1;
+            filter: blur(0px);
+        }
+
+        100% {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    }
+
     .menu .menu-block:first-of-type {
         display: none;
     }
@@ -756,13 +797,9 @@ main {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        gap: 4rem;
+        gap: var(--general-margin);
         height: -webkit-min-content;
         height: -moz-min-content;
         height: min-content;
-    }
-
-    .gallery-wrapper img:first-of-type {
-        margin-top: 50%;
     }
 }
