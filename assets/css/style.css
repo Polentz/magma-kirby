@@ -738,16 +738,6 @@ main {
         grid-column-start: 2;
     }
 
-    .headline-cover img,
-    .gallery-wrapper img,
-    .gallery-wrapper video {
-        -webkit-transition: opacity 2s ease, -webkit-filter 1s ease-in-out;
-        transition: opacity 2s ease, -webkit-filter 1s ease-in-out;
-        -o-transition: opacity 2s ease, filter 1s ease-in-out;
-        transition: opacity 2s ease, filter 1s ease-in-out;
-        transition: opacity 2s ease, filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
-    }
-
     .headline-cover.scroll-unblur img,
     .gallery-wrapper img.scroll-unblur,
     .gallery-wrapper video.scroll-unblur {

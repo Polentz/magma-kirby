@@ -24,7 +24,7 @@ const unblurOnScroll = () => {
     for (let i = 0; i < images.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = images[i].getBoundingClientRect().top;
-        const elementVisible = 300;
+        const elementVisible = 100;
         if (elementTop < windowHeight - elementVisible) {
             images[i].classList.add("scroll-unblur");
         } else {
