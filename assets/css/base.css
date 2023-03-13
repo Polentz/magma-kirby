@@ -178,11 +178,18 @@ img::selection {
 }
 
 ::-moz-selection {
-    background-color: var(--txt-color);
-    color: var(--bg-color);
+    background-color: #ffffff80;
+    color: var(--txt-color);
 }
 
 ::selection {
-    background-color: var(--txt-color);
+    background-color: #ffffff80;
+    color: var(--txt-color);
+}
+
+.headline-data p::selection,
+.headline-data h3::selection,
+.headline-data h2::selection {
+    background-color: #00000080;
     color: var(--bg-color);
 }

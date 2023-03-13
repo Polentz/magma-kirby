@@ -1,7 +1,7 @@
 <header>
     <div class="menu">
         <div class="menu-block">
-            <h1 class="menu-link page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
+            <h1 class="page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
             <?php if ($page->is('home')) : ?>
                 <?php foreach ($filters as $filter) : ?>
                     <?php if ($filter->isNotEmpty()) : ?>

@@ -1,14 +1,14 @@
 <?= snippet('header') ?>
 <?= snippet('menu', ['filters' => $filters]) ?>
 
-<main>
-    <section id="future-events" class="events-wrapper">
+<section class="main-wrapper">
+    <div id="future-events" class="events-wrapper">
         <?php foreach ($events as $event) : ?>
             <?php if($event->date()->toDate() > time()) : ?>
                 <?= snippet('headline', ['event' => $event]) ?>
             <?php endif ?>
         <?php endforeach ?>
-    </section>
+    </div>
 
     <div class="events-separator">
         <svg viewBox="0 0 57 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,15 +17,14 @@
         <p>Eventi passati</p>
     </div>
 
-    <section id="past-events" class="events-wrapper">
+    <div id="past-events" class="events-wrapper">
         <?php foreach ($events as $event) : ?>
             <?php if($event->date()->toDate() < time()) : ?>
                 <?= snippet('headline', ['event' => $event]) ?>
             <?php endif ?>
         <?php endforeach ?>
-    </section>
-
-    <section class="overlay"></section>
-</main>
+    </div>
+</section>
+<section class="overlay"></section>
 
 <?= snippet('footer') ?>

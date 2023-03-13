@@ -1,6 +1,8 @@
 const cursor = document.getElementById("cursor");
 const innerCursor = cursor.querySelector(".inner-cursor");
-const defaultCursorElements = document.querySelectorAll("a, img, .menu-close, .overlay, .menu-link");
+const changeCursorMedia = document.querySelectorAll("img, video, .overlay");
+const changeCursorLinks = document.querySelectorAll("a, .menu-link, .page-title.home, .page-title.projects");
+const changeCursorSvgs = document.querySelectorAll(".menu-close");
 
 document.addEventListener("mousemove", (event) => {
     let x = event.pageX;
@@ -19,12 +21,38 @@ document.addEventListener("mousemove", (event) => {
     // } else if (xX >= 75 && xX <= 100) {
     //     cursor.style.backgroundColor = " ";
     // };
-    defaultCursorElements.forEach(el => {
+    changeCursorMedia.forEach(el => {
         el.addEventListener("mouseenter", () => {
-            innerCursor.style.transform = "scale(.97)";
+            cursor.style.opacity = ".5";
+            cursor.style.zIndex = "9";
+        });
+        el.addEventListener("mouseleave", () => {
+            cursor.style.opacity = "1";
+            cursor.style.zIndex = "-1";
+        });
+    });
+    changeCursorLinks.forEach(el => {
+        el.addEventListener("mouseenter", () => {
+            innerCursor.style.transform = "scale(1)";
+            el.style.color = "var(--bg-color)";
+            el.style.mixBlendMode = "difference";
         });
         el.addEventListener("mouseleave", () => {
             innerCursor.style.transform = "scale(0)";
+            el.style.color = "var(--txt-color)";
+            el.style.mixBlendMode = "unset";
+        });
+    });
+    changeCursorSvgs.forEach(el => {
+        el.addEventListener("mouseenter", () => {
+            innerCursor.style.transform = "scale(1)";
+            el.style.stroke = "var(--bg-color)";
+            el.style.mixBlendMode = "difference";
+        });
+        el.addEventListener("mouseleave", () => {
+            innerCursor.style.transform = "scale(0)";
+            el.style.stroke = "var(--txt-color)";
+            el.style.mixBlendMode = "unset";
         });
     });
 });

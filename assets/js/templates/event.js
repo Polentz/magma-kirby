@@ -1,27 +1,27 @@
 const images = document.querySelectorAll(".gallery-wrapper img, .gallery-wrapper video");
-const texts = document.querySelectorAll(".info-wrapper");
-const title = document.querySelector(".title");
-const handleBlur = (images, texts, title) => {
+const texts = document.querySelectorAll(".info-wrapper, .headline-data");
+const overlay = document.querySelector(".overlay");
+const handleBlur = (images, texts, overlay) => {
     images.forEach(img => {
         img.addEventListener("click", () => {
             images.forEach(img => {
-                img.classList.toggle("unblur");
+                img.classList.add("unblur");
             });
             texts.forEach(txt => {
-                txt.classList.toggle("blur");
+                txt.classList.add("blur");
             });
-            title.style.cursor = "pointer";
+            overlay.classList.add("on");
         });
     });
-    title.addEventListener("click", () => {
+    overlay.addEventListener("click", () => {
         images.forEach(img => {
             img.classList.remove("unblur");
         });
         texts.forEach(txt => {
             txt.classList.remove("blur");
         });
-        title.style.cursor = "none";
+        overlay.classList.remove("on");
     });
 };
 
-handleBlur(images, texts, title);
+handleBlur(images, texts, overlay);

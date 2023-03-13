@@ -3,9 +3,7 @@
 
 <main>
     <section class="section-wrapper">
-        <div class="about-info">
-            <?= snippet('info') ?>
-        </div>
+        <?= snippet('info') ?>
     </section>
 </main>
 

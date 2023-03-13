@@ -29,31 +29,31 @@ const handlePagelinks = () => {
 };
 
 const images = document.querySelectorAll(".gallery-wrapper img, .gallery-wrapper video");
-const texts = document.querySelectorAll(".info-wrapper");
-const titles = document.querySelectorAll(".title");
-const handleBlur = (images, texts) => {
+const texts = document.querySelectorAll(".info-wrapper, .headline-data");
+const overlays = document.querySelectorAll(".overlay");
+const handleBlur = (images, texts, overlay) => {
     images.forEach(img => {
         img.addEventListener("click", () => {
             images.forEach(img => {
-                img.classList.toggle("unblur");
+                img.classList.add("unblur");
             });
             texts.forEach(txt => {
-                txt.classList.toggle("blur");
+                txt.classList.add("blur");
             });
-            titles.forEach(title => {
-                title.style.cursor = "pointer";
-            })
+            overlays.forEach(overlay => {
+                overlay.classList.add("on");
+            });
         });
     });
-    titles.forEach(title => {
-        title.addEventListener("click", () => {
+    overlays.forEach(overlay => {
+        overlay.addEventListener("click", () => {
             images.forEach(img => {
                 img.classList.remove("unblur");
             });
             texts.forEach(txt => {
                 txt.classList.remove("blur");
             });
-            title.style.cursor = "none";
+            overlay.classList.remove("on");
         });
     });
 };
@@ -65,12 +65,11 @@ const handleHeight = () => {
         const sectionImages = project.querySelector(".gallery-section");
         const textHeight = sectionText.offsetHeight;
         let sectionHeight = textHeight;
-        console.log(sectionHeight);
         sectionImages.style.setProperty("--section-height", `${sectionHeight}px`);
     });
 };
 
-handleBlur(images, texts);
 handlePagelinks(menuLinks, resetCurrent);
+handleBlur(images, texts, overlays);
 window.addEventListener("resize", handleHeight);
 handleHeight();
