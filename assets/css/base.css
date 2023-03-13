@@ -168,3 +168,21 @@ button,
 input {
     outline: 0;
 }
+
+img::-moz-selection {
+    background-color: transparent;
+}
+
+img::selection {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+}
+
+::selection {
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+}

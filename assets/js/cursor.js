@@ -1,6 +1,6 @@
 const cursor = document.getElementById("cursor");
 const innerCursor = cursor.querySelector(".inner-cursor");
-const defaultCursorElements = document.querySelectorAll("a, img, .menu-close, .overlay, .menu-link, h2");
+const defaultCursorElements = document.querySelectorAll("a, img, .menu-close, .overlay, .menu-link");
 
 document.addEventListener("mousemove", (event) => {
     let x = event.pageX;
@@ -11,17 +11,17 @@ document.addEventListener("mousemove", (event) => {
     // const xP = x / w * 100;
     // const xX = xP.toFixed(0);
     // if (xX >= 0 && xX <= 25) {
-    //     cursor.style.backgroundColor = "rgb(0, 200, 255)";
+    //     cursor.style.backgroundColor = " ";
     // } else if (xX >= 25 && xX <= 50) {
-    //     cursor.style.backgroundColor = "rgb(140, 90, 255)";
+    //     cursor.style.backgroundColor = " ";
     // } else if (xX >= 50 && xX <= 75) {
-    //     cursor.style.backgroundColor = "pink";
+    //     cursor.style.backgroundColor = " ";
     // } else if (xX >= 75 && xX <= 100) {
-    //     cursor.style.backgroundColor = "aqua";
+    //     cursor.style.backgroundColor = " ";
     // };
     defaultCursorElements.forEach(el => {
         el.addEventListener("mouseenter", () => {
-            innerCursor.style.transform = "scale(0.95)";
+            innerCursor.style.transform = "scale(.97)";
         });
         el.addEventListener("mouseleave", () => {
             innerCursor.style.transform = "scale(0)";
