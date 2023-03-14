@@ -1,6 +1,6 @@
 <?php if ($page->is('home')) : ?>
     <div class="submenu-wrapper on-mobile">
-        <h1 class="menu-link page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
+        <h1 class="page-title <?= $page->template() ?> <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></h1>
         <?php foreach ($filters as $filter) : ?>
             <?php if ($filter->isNotEmpty()) : ?>
                 <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
@@ -18,6 +18,7 @@
 
 <?php if ($page->is('projects')) : ?>
     <div class="submenu-wrapper on-mobile">
+        <h1 class="page-title <?= $page->template() ?> <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></h1>
         <?php foreach ($page->children()->listed() as $project) : ?>
             <a class="menu-link js-href" href="#<?= $project->title()->slug() ?>"><?= $project->title() ?></a>
         <?php endforeach ?>

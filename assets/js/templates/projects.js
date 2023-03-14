@@ -33,7 +33,7 @@ const handlePagelinks = () => {
 const images = document.querySelectorAll(".gallery-wrapper img, .gallery-wrapper video");
 const texts = document.querySelectorAll(".info-wrapper, .headline-data");
 const overlays = document.querySelectorAll(".overlay");
-const handleBlur = (images, texts, overlay) => {
+const handleBlur = (images, texts, overlays) => {
     images.forEach(img => {
         img.addEventListener("click", () => {
             images.forEach(img => {
