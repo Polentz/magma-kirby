@@ -1,7 +1,7 @@
 <header>
     <div class="menu">
         <div class="menu-block">
-            <h1 class="page-title <?= $page->template() ?>"><?= $page->title() ?></h1>
+            <h1 class="page-title <?= $page->template() ?> <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></h1>
             <?php if ($page->is('home')) : ?>
                 <?php foreach ($filters as $filter) : ?>
                     <?php if ($filter->isNotEmpty()) : ?>
@@ -49,7 +49,7 @@
             </div>
             <div class="submenu-wrapper">
                 <?php foreach ($pages->unlisted()->not('error') as $page) : ?>
-                    <a href="<?= $page->url() ?>" class="menu-link <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></a>
+                    <a href="<?= $page->url() ?>" class="menu-link"><?= $page->title() ?></a>
                 <?php endforeach ?>
             </div>
             <?= snippet('mobile-submenu') ?>

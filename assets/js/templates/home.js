@@ -32,6 +32,9 @@ const resetFilters = document.querySelectorAll(".page-title");
 const handleFilters = (filters, element, resetFilters, elements) => {
     filters.forEach(filter => {
         filter.addEventListener("click", (e) => {
+            resetFilters.forEach(reset => {
+                reset.classList.remove("current");
+            });
             filters.forEach(all => {
                 all.classList.remove("current");
             });
@@ -53,6 +56,7 @@ const handleFilters = (filters, element, resetFilters, elements) => {
     });
     resetFilters.forEach(reset => {
         reset.addEventListener("click", () => {
+            reset.classList.add("current");
             elements.forEach(el => {
                 el.classList.add("unfiltered");
                 el.classList.remove("unfiltered");

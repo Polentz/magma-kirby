@@ -4,6 +4,7 @@ const handlePagelinks = () => {
     menuLinks.forEach(link => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
+            resetCurrent.classList.remove("current");
             menuLinks.forEach(all => {
                 all.classList.remove("current");
             });
@@ -18,6 +19,7 @@ const handlePagelinks = () => {
         });
     });
     resetCurrent.addEventListener("click", () => {
+        resetCurrent.classList.add("current");
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
