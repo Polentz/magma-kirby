@@ -11,18 +11,6 @@ const handleCursor = () => {
         cursor.style.display = "block";
         cursor.style.left = x + "px";
         cursor.style.top = y + "px";
-        // let w = document.body.clientWidth;
-        // const xP = x / w * 100;
-        // const xX = xP.toFixed(0);
-        // if (xX >= 0 && xX <= 25) {
-        //     cursor.style.backgroundColor = " ";
-        // } else if (xX >= 25 && xX <= 50) {
-        //     cursor.style.backgroundColor = " ";
-        // } else if (xX >= 50 && xX <= 75) {
-        //     cursor.style.backgroundColor = " ";
-        // } else if (xX >= 75 && xX <= 100) {
-        //     cursor.style.backgroundColor = " ";
-        // };
         changeCursorMedia.forEach(el => {
             el.addEventListener("mouseenter", () => {
                 cursor.style.opacity = ".5";
