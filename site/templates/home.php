@@ -3,7 +3,7 @@
 
 <section class="main-wrapper">
     <div id="future-events" class="events-wrapper">
-        <?php foreach ($events as $event) : ?>
+        <?php foreach ($events->sortBy('date', 'desc') as $event) : ?>
             <?php if($event->date()->toDate() > time()) : ?>
                 <?= snippet('headline', ['event' => $event]) ?>
             <?php endif ?>
@@ -18,7 +18,7 @@
     </div>
 
     <div id="past-events" class="events-wrapper">
-        <?php foreach ($events as $event) : ?>
+        <?php foreach ($events->sortBy('date', 'desc') as $event) : ?>
             <?php if($event->date()->toDate() < time()) : ?>
                 <?= snippet('headline', ['event' => $event]) ?>
             <?php endif ?>

@@ -26,10 +26,6 @@ Cover: - file://8qAwRYZonIM4ECqa
 
 ----
 
-Pagestatus: true
-
-----
-
 Lefttext: <p>Sabato 8 ottobre il MAR – Museo d’Arte della Città di Ravenna ha ospitato nel suo chiostro il collettivo artistico torinese Spime.im che si è esibito con la performance audiovisiva dal titolo ZERO. Lo show si è proposto come evento inaugurale della VII Biennale di Mosaico Contemporaneo e come perfetto esempio di mosaico digitale, dove le sue tessere corrispondono a pixel e immagini in movimento.</p><p>Come tessere di un grande mosaico, le immagini selezionate e rielaborate dal collettivo torinese Spime.im ci trasportano in uno spazio e in un tempo che corrispondono al qui e ora. Zero è un’opera audiovisiva sinestetica che, con la sua sonorità irruente e distorta, e con i suoi visual frenetici e provocatori, schiaffa in faccia allo spettatore la cruda realtà contemporanea di un mondo afflitto da problemi ai quali l’essere umano è chiamato a porre rimedio. Grandi, medie e piccole tessere digitali, affiancate una accanto all’altra, vanno a comporre una superficie musiva in continuo mutamento, che si propone come manifesto multimediale pronto a denunciare i costanti errori e glitch causati dalla nostra società.</p><p>Qui, ancora una volta, vediamo il mosaico per quello che è: non solo una pura tecnica, ma un modo per pensare la realtà come una e molteplice, dove il tutto è composto dalle singole parti. Tuttavia, il titolo della performance ci offre anche l’opportunità di un nuovo inizio, di resuscitare dalle proprie ceneri, di ripartire dai propri sbagli e di ricominciare da ZERO.</p><p>L'evento è a cura dell'associazione in collaborazione con il Comune di Ravenna.</p>
 
 ----
@@ -53,7 +49,11 @@ Gallery:
 
 ----
 
-Video: - file://8y3oP3gppTheiOJ0
+Video: 
+
+----
+
+Pagestatus: true
 
 ----
 

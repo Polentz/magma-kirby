@@ -3,6 +3,7 @@ title: Video
 accept: 
   extension: mp4
   type: video
+  maxsize: 41943040
 
 fields:
   caption:

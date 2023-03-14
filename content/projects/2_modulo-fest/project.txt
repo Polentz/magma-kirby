@@ -18,11 +18,11 @@ Location: Milano Marittima
 
 ----
 
-Lefttext: <p>Dopo il successo delle prime due edizioni, che hanno fatto scoprire al pubblico il molo, la pineta e la Salina di Cervia e il parco fluviale di Cannuzzo, la rassegna 2022- terza edizione - ha espanso il suo raggio d’azione proponendo un calendario di dieci appuntamenti che hanno attraversato il territorio della Romagna, potenziando così il legame tra suono, arte e Natura e consolidando il progetto come un appuntamento culturale ricorrente nel corso del periodo estivo,  itinerante e fortemente identitario. Tra Faenza, Cervia, Cesenatico e altri sei comuni della Bassa Romagna (Lugo, Fusignano, Cotignola, Bagnacavallo, Bagnara di Romagna, Massa Lombarda), i luoghi simbolici selezionati si sono trasformati in un affascinante palcoscenico in cui gli spettacoli proposti hanno ricreato una dimensione quasi surreale.</p>
+Lefttext: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 ----
 
-Righttext: 
+Righttext: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 ----
 

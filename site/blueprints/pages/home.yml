@@ -9,7 +9,7 @@ sections:
       date:
         type: text
         label: Data 
-        value: '{{ page.date }}'
+        value: '{{ page.date.toDate('d/m/Y') }}'
       type:
         type: text
         label: Tag

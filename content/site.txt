@@ -14,8 +14,20 @@ Email:
 
 ----
 
-Support: http://www.magma.zone/
+Support: 
 
 ----
 
 Footer: 2023
+
+----
+
+Description: Description here...
+
+----
+
+Keywords: keyword
+
+----
+
+Ogimage: 
