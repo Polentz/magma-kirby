@@ -3,5 +3,8 @@
 return [
     'debug' => true,
     'smartypants' => true,
-    // 'home' => 'coming-soon'
+    'home' => 'coming-soon',
+    'panel' => [
+        'language' => 'it'
+    ]
 ];
