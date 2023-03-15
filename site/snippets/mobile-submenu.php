@@ -1,10 +1,8 @@
 <?php if ($page->is('home')) : ?>
     <div class="submenu-wrapper on-mobile">
         <h1 class="page-title <?= $page->template() ?> <?= e($page->isOpen(), 'current') ?>"><?= $page->title() ?></h1>
-        <?php foreach ($filters as $filter) : ?>
-            <?php if ($filter->isNotEmpty()) : ?>
-                <a class="menu-link filter" data-filter="<?= $filter->inline()->slug() ?>"><?= $filter->inline() ?></a>
-            <?php endif ?>
+        <?php foreach ($page->filters()->toStructure() as $filter): ?>
+            <a class="menu-link filter" data-filter="<?= $filter->filter()->slug() ?>"><?= $filter->filter()->inline() ?></a>
         <?php endforeach ?>
     </div>
 <?php endif ?>

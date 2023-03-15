@@ -1,8 +1,10 @@
 title: Chi siamo
-options:
-  navigation:
-    status: listed
-    template: all
+navigation:
+  status: all
+  template:
+    - home
+    - about
+    - projects
 
 columns:
   main:

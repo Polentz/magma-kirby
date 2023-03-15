@@ -1,6 +1,25 @@
 title: Agenda
+navigation:
+  status: all
+  template:
+    - home
+    - about
+    - projects
+
 
 sections:
+  filters:
+    type: fields
+    fields:
+      filters:
+        type: structure
+        label: false
+        width: 1/2
+        max: 4
+        fields:
+          filter:
+            type: text
+            label: Filtri disponibili
   pages:
     label: Lista degli eventi
     type: pages

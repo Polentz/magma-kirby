@@ -2,4 +2,17 @@ Title: Agenda
 
 ----
 
+Filters:
+
+- 
+  filter: Dj Set
+- 
+  filter: Concerto
+- 
+  filter: Performance
+- 
+  filter: Arti Visive
+
+----
+
 Uuid: rrKWCB62dSU2Sdfr

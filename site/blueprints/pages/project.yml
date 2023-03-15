@@ -3,7 +3,7 @@ options:
   preview: false
   navigation:
     status: listed
-    template: all
+    template: project
 
 columns:
   info:

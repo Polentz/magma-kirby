@@ -1,8 +1,10 @@
 title: Progetti
-options:
-  navigation:
-    status: listed
-    template: all
+navigation:
+  status: all
+  template:
+    - home
+    - about
+    - projects
 
 sections:
   pages:

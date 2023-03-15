@@ -2,7 +2,7 @@ title: Evento
 options:
   navigation:
     status: listed
-    template: all
+    template: event
 
 tabs:
   eventslist:
@@ -49,14 +49,12 @@ tabs:
                 label: "Filtra per:"
                 type: tags
                 options:
-                  - Performance
                   - Dj Set
-                  - Arti visive
                   - Concerto
-                #accept: options
-                width: 1/4
+                  - Performance
+                  - Arti visive
+                accept: options
                 min: 1
-                max: 1
                 layout: list
           cover:
             type: fields

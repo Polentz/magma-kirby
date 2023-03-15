@@ -1,5 +1,5 @@
 <?= snippet('header') ?>
-<?= snippet('menu', ['filters' => $filters]) ?>
+<?= snippet('menu') ?>
 
 <section class="main-wrapper">
     <div id="future-events" class="events-wrapper">
