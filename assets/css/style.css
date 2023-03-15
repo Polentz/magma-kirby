@@ -21,6 +21,7 @@ body {
     background-color: var(--bg-color);
     position: relative;
     cursor: none;
+    overflow-x: hidden;
 }
 
 .clickable {
@@ -686,6 +687,12 @@ a.current:hover::after {
         gap: var(--main-margin-x);
     }
 
+    .page-title.home.current:hover::after,
+    .page-title.projects.current:hover::after,
+    a.current:hover::after {
+        background-color: var(--txt-color);
+    }
+
     .events-wrapper {
         min-width: unset;
     }
@@ -777,7 +784,6 @@ a.current:hover::after {
     }
 }
 
-
 @media screen and (max-device-width: 420px) and (-webkit-min-device-pixel-ratio: 2) {
     .menu .menu-block:first-of-type {
         display: none;
@@ -820,9 +826,46 @@ a.current:hover::after {
     }
 }
 
-@media screen and (max-device-width: 720px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media screen and (max-device-width: 915px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
     :root {
         --main-margin-y: 25vh;
+    }
+
+    .submenu-wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+
+    .headline-cover {
+        width: 250px;
+    }
+
+    .section-wrapper,
+    .main-wrapper {
+        position: relative;
+    }
+}
+
+@media screen and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+
+    .menu .menu-block:first-of-type {
+        display: none;
+    }
+
+    .menu .menu-block:last-of-type {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: unset;
+    }
+
+    .menu-close {
+        position: static;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
     }
 
     .submenu-wrapper {
@@ -840,5 +883,31 @@ a.current:hover::after {
     .section-wrapper,
     .main-wrapper {
         position: relative;
+    }
+
+    .info-section .headline-block {
+        margin-bottom: calc(var(--main-margin-y)/2);
+    }
+
+    .headline-cover {
+        width: 100%;
+    }
+
+    .headline-data .title {
+        margin-bottom: 0;
+    }
+
+    .gallery-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: var(--general-margin);
+        height: -webkit-min-content;
+        height: -moz-min-content;
+        height: min-content;
     }
 }
