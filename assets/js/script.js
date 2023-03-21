@@ -20,7 +20,7 @@ const handleMenu = (open, submenu, close) => {
 };
 
 const unblurOnScroll = () => {
-    const images = document.querySelectorAll(".headline-cover, img, video");
+    const images = document.querySelectorAll("img, video");
     for (let i = 0; i < images.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = images[i].getBoundingClientRect().top;

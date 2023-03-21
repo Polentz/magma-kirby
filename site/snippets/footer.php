@@ -10,6 +10,7 @@
     <footer>
         <p><?= $site->footer() ?> © MAGMA</p>
     </footer>
+    <script src="https://unpkg.com/loadeer@2.1.1/dist/loadeer.umd.js" defer init></script>
     <?= js([
         'assets/js/script.js',
         'assets/js/cursor.js',

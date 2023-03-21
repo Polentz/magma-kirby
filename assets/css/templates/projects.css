@@ -1,0 +1,10 @@
+.section-wrapper {
+    padding-top: var(--main-margin-y);
+    padding-right: var(--main-margin-x);
+    padding-bottom: 0;
+    padding-left: var(--main-margin-x);
+}
+
+.section-wrapper:last-of-type {
+    padding-bottom: var(--main-margin-y);
+}

@@ -2,6 +2,7 @@ title: Image
 
 accept: 
   extension: pdf
+  maxsize: 15728640
 
 fields:
   linkName:

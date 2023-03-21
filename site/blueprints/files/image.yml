@@ -2,6 +2,7 @@ title: Image
 
 accept: 
   extension: jpg, png, jpeg
+  maxsize: 1258291
 
 fields:
   alt:

@@ -30,6 +30,10 @@ tabs:
                 label: Facebook
                 placeholder: Link di Facebook
                 type: text
+              vimeo:
+                label: Vimeo
+                placeholder: Link di Vimeo
+                type: text
               email:
                 label: Email
                 placeholder: Indirizzo email

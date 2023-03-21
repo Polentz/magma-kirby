@@ -55,7 +55,9 @@ const handleBlur = (images, texts, overlays) => {
             texts.forEach(txt => {
                 txt.classList.remove("blur");
             });
-            overlay.classList.remove("on");
+            overlays.forEach(overlay => {
+                overlay.classList.remove("on");
+            });
         });
     });
 };

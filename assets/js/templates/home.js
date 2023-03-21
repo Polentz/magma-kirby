@@ -1,28 +1,44 @@
 const covers = document.querySelectorAll(".headline-cover");
+const images = document.querySelectorAll(".headline-cover img");
 const texts = document.querySelectorAll(".headline-data");
 const overlay = document.querySelector(".overlay");
 const handleBlur = (covers, texts, overlay) => {
     covers.forEach(img => {
         let randomLeft = Math.floor(Math.random() * 75);
         img.style.setProperty("--random-left", `${randomLeft}` + "%");
+    });
+    images.forEach(img => {
         img.addEventListener("click", () => {
-            covers.forEach(img => {
+            images.forEach(img => {
                 img.classList.toggle("unblur");
             });
             texts.forEach(txt => {
                 txt.classList.toggle("blur");
             });
-            overlay.style.display = "block";
+            overlay.classList.add("on");
         });
-    });
+    })
     overlay.addEventListener("click", () => {
-        covers.forEach(img => {
+        images.forEach(img => {
             img.classList.remove("unblur");
         });
         texts.forEach(txt => {
             txt.classList.remove("blur");
         });
-        overlay.style.display = "none";
+        overlay.classList.remove("on");
+    });
+};
+
+const handleTitleHOverEffect = (events) => {
+    events.forEach(event => {
+        const title = event.querySelector(".headline-data .title h2");
+        const cover = event.querySelector(".headline-cover img");
+        title.addEventListener("mouseenter", () => {
+            cover.classList.add("unblur");
+        });
+        title.addEventListener("mouseleave", () => {
+            cover.classList.remove("unblur");
+        });
     });
 };
 
@@ -68,19 +84,6 @@ const handleFilters = (filters, element, resetFilters, elements) => {
     });
 };
 
-const handleTitleHOverEffect = (events) => {
-    events.forEach(event => {
-        const title = event.querySelector(".headline-data .title h2");
-        const cover = event.querySelector(".headline-cover");
-        title.addEventListener("mouseenter", () => {
-            cover.classList.add("unblur");
-        });
-        title.addEventListener("mouseleave", () => {
-            cover.classList.remove("unblur");
-        });
-    });
-};
-
-handleFilters(filters, events, resetFilters, events);
 handleBlur(covers, texts, overlay);
 handleTitleHOverEffect(events);
+handleFilters(filters, events, resetFilters, events);
