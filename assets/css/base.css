@@ -5,11 +5,6 @@
     box-sizing: border-box;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
-    scrollbar-width: none;
-}
-
-*::-webkit-scrollbar {
-    display: none;
 }
 
 a,
