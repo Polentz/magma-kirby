@@ -24,4 +24,14 @@ const handleBlur = (images, texts, overlay) => {
     });
 };
 
+const sectionText = document.querySelector(".info-section");
+const sectionImages = document.querySelector(".gallery-section");
+const handleHeight = () => {
+    const textHeight = sectionText.offsetHeight;
+    let sectionHeight = textHeight;
+    sectionImages.style.setProperty("--section-height", `${sectionHeight}px`);
+};
+
 handleBlur(images, texts, overlay);
+window.addEventListener("resize", handleHeight);
+handleHeight();

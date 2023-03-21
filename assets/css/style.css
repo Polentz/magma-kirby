@@ -7,7 +7,7 @@
     --large-txt-size: calc(1vw + 2.5rem);
     --small-txt-size: .6rem;
     --general-margin: 1rem;
-    --main-margin-y: 15vh;
+    --main-margin-y: 20vh;
     --main-margin-x: 5vw;
     --random-left: 55%;
     --cursor-size: 4rem;
@@ -470,12 +470,15 @@ a.current:hover::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-top: 2rem;
 }
 
 .logo-wrapper img {
     width: 48px;
+    object-fit: contain;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
     mix-blend-mode: multiply;
@@ -827,6 +830,10 @@ a.current:hover::after {
 }
 
 @media screen and (max-device-width: 915px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .cursor {
+        display: none !important;
+    }
+
     :root {
         --main-margin-y: 25vh;
     }
@@ -845,6 +852,14 @@ a.current:hover::after {
     .section-wrapper,
     .main-wrapper {
         position: relative;
+    }
+
+    .headline-cover.scroll-unblur img,
+    .gallery-wrapper img.scroll-unblur,
+    .gallery-wrapper video.scroll-unblur {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
     }
 }
 
@@ -909,5 +924,13 @@ a.current:hover::after {
         height: -webkit-min-content;
         height: -moz-min-content;
         height: min-content;
+    }
+
+    .headline-cover.scroll-unblur img,
+    .gallery-wrapper img.scroll-unblur,
+    .gallery-wrapper video.scroll-unblur {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
     }
 }
