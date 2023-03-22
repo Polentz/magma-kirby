@@ -1,4 +1,4 @@
-const images = document.querySelectorAll(".gallery-wrapper img, .gallery-wrapper video");
+const images = document.querySelectorAll(".gallery-wrapper img, .video-wrapper figure");
 const texts = document.querySelectorAll(".info-wrapper, .headline-data");
 const overlay = document.querySelector(".overlay");
 const handleBlur = (images, texts, overlay) => {

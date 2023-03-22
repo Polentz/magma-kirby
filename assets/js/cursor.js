@@ -1,7 +1,6 @@
 const cursor = document.getElementById("cursor");
-// const innerCursor = cursor.querySelector(".inner-cursor");
 const changeCursorMedia = document.querySelectorAll("img, video, .overlay");
-const changeCursorLinks = document.querySelectorAll("a, .menu-link, .page-title.home, .page-title.projects, .menu-close");
+const changeCursorLinks = document.querySelectorAll("a, .menu-link, .page-title.home, .page-title.projects, .menu-close, popup-close, .page-label p");
 
 const handleCursor = () => {
     document.addEventListener("mousemove", (event) => {
@@ -29,7 +28,7 @@ const handleCursor = () => {
     });
     document.addEventListener("mouseout", () => {
         cursor.style.display = "none";
-    })
+    });
 };
 
 handleCursor();

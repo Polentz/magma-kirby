@@ -4,8 +4,8 @@ const texts = document.querySelectorAll(".headline-data");
 const overlay = document.querySelector(".overlay");
 const handleBlur = (covers, texts, overlay) => {
     covers.forEach(img => {
-        let randomLeft = Math.floor(Math.random() * 75);
-        img.style.setProperty("--random-left", `${randomLeft}` + "%");
+        let randomPos = Math.floor(Math.random() * 75);
+        img.style.setProperty("--random-position", `${randomPos}` + "%");
     });
     images.forEach(img => {
         img.addEventListener("click", () => {

@@ -33,6 +33,25 @@ const unblurOnScroll = () => {
     }
 }
 
+const popupOpen = document.querySelectorAll(".popup-open");
+const popup = document.querySelector(".popup");
+const popupClose = document.querySelector(".popup-close");
+const handlePopup = () => {
+    const popupLinks = popup.querySelectorAll("p");
+    popupLinks.forEach(links => {
+        links.classList.add("menu-link");
+    });
+    popupOpen.forEach(btn => {
+        btn.addEventListener("click", () => {
+            popup.classList.toggle("show");
+        });
+    });
+    popupClose.addEventListener("click", () => {
+        popup.classList.remove("show");
+    });
+};
+
 handleMenu(menuOpen, submenu, menuClose);
 window.addEventListener("scroll", unblurOnScroll);
 unblurOnScroll();
+handlePopup();

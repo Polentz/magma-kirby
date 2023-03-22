@@ -25,22 +25,34 @@ tabs:
               instagram:
                 label: Instagram
                 placeholder: Link di Instagram
-                type: text
+                type: url
               facebook:
                 label: Facebook
                 placeholder: Link di Facebook
-                type: text
+                type: url
               vimeo:
                 label: Vimeo
                 placeholder: Link di Vimeo
-                type: text
+                type: url
               email:
                 label: Email
                 placeholder: Indirizzo email
-                type: text
+                type: url
+              shop:
+                label: Shop
+                placeholder: Link dello shop
+                type: url
               support:
                 label: Sostieni
-                type: url
+                type: writer
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - strike
+                  - link
+                  - email
+                nodes: false
               footer:
                 label: Footer
                 placeholder: Anno

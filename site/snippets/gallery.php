@@ -11,9 +11,17 @@
             data-sizes="auto"        
         >
     <?php endforeach ?>
-    <?php if ($video = $page->video()->toFile()) : ?>
-        <video controls autoplay muted loop>
-            <source src="<?= $video->url() ?>" type="video/mp4">
-        </video>
-    <?php endif ?>
+</div>
+<div class="video-wrapper">
+    <div class="overlay"></div>
+    <?php foreach ($page->video()->toFiles() as $video) : ?>
+        <figure>
+            <video controls muted loading="lazy" src="<?= $video->url() ?>" type="video/mp4"></video>
+            <?php if ($video->caption()->isNotEmpty()) : ?>
+                <figcaption>
+                    <?= $video->caption()->kt() ?>
+                </figcaption>
+            <?php endif ?>
+        </figure>
+    <?php endforeach ?>
 </div>

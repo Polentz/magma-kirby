@@ -8,7 +8,7 @@
                 <?php endforeach ?>
             <?php endif ?>
             <?php if ($page->is('about')) : ?>
-                <a class="menu-link" href="<?= $site->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
+                <p class="menu-link popup-open">Sostieni MAGMA</p>
                 <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
             <?php endif ?>
             <?php if ($page->is('projects')) : ?>
@@ -26,7 +26,7 @@
     </div>
     <div class="submenu">
         <div class="menu-block">
-            <div class="submenu-wrapper">
+            <div class="submenu-wrapper contact-wrapper">
                 <a href="<?= $site->instagram() ?>" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13 18.2174C15.8815 18.2174 18.2174 15.8815 18.2174 13C18.2174 10.1185 15.8815 7.78261 13 7.78261C10.1185 7.78261 7.78259 10.1185 7.78259 13C7.78259 15.8815 10.1185 18.2174 13 18.2174Z"/>
@@ -51,6 +51,9 @@
                 </a>
             </div>
             <div class="submenu-wrapper">
+                <?php if ($site->shop()->isNotEmpty()) : ?>
+                    <a class="menu-link" href="<?= $site->shop() ?>">Shop</a>
+                <?php endif ?>
                 <?php foreach ($pages->unlisted()->not('error') as $page) : ?>
                     <a href="<?= $page->url() ?>" class="menu-link"><?= $page->title() ?></a>
                 <?php endforeach ?>

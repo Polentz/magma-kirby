@@ -30,7 +30,7 @@ const handlePagelinks = () => {
     });
 };
 
-const images = document.querySelectorAll(".gallery-wrapper img, .gallery-wrapper video");
+const images = document.querySelectorAll(".gallery-wrapper img, .video-wrapper video");
 const texts = document.querySelectorAll(".info-wrapper, .headline-data");
 const overlays = document.querySelectorAll(".overlay");
 const handleBlur = (images, texts, overlays) => {

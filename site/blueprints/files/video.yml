@@ -7,6 +7,14 @@ accept:
 
 fields:
   caption:
-    type: text
     width: 1/2
     label: Didascalia
+    type: writer
+    marks:
+      - bold
+      - italic
+      - underline
+      - strike
+      - link
+      - email
+    nodes: false
