@@ -37,7 +37,7 @@ tabs:
               email:
                 label: Email
                 placeholder: Indirizzo email
-                type: url
+                type: email
               shop:
                 label: Shop
                 placeholder: Link dello shop

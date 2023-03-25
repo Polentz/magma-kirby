@@ -51,12 +51,12 @@
                 </a>
             </div>
             <div class="submenu-wrapper">
-                <?php if ($site->shop()->isNotEmpty()) : ?>
-                    <a class="menu-link" href="<?= $site->shop() ?>">Shop</a>
-                <?php endif ?>
                 <?php foreach ($pages->unlisted()->not('error') as $page) : ?>
                     <a href="<?= $page->url() ?>" class="menu-link"><?= $page->title() ?></a>
                 <?php endforeach ?>
+                <?php if ($site->shop()->isNotEmpty()) : ?>
+                    <a class="menu-link" href="<?= $site->shop() ?>" target="_blank" rel="noopener noreferrer">Shop</a>
+                <?php endif ?>
             </div>
             <?= snippet('mobile-submenu') ?>
         </div>
