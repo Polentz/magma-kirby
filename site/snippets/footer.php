@@ -12,9 +12,7 @@
             <?= $site->support()->kt() ?>
         </div>
     </div>
-    <div id="cursor" class="cursor">
-        <div class="inner-cursor"></div>
-    </div>
+    <div id="cursor" class="cursor"></div>    
     <footer>
         <p><?= $site->footer() ?> © MAGMA</p>
     </footer>

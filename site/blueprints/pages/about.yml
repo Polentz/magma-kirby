@@ -49,17 +49,13 @@ columns:
             label: Newsletter
             placeholder: Link di Mailchimp
             type: url
-      file:
-        type: fields
-        fields:
-          pdf:
-            label: Statuto Associazione
-            empty: Carica il file PDF
+          document:
             type: files
-            template: pdf
-            uploads: pdf
-            multiple: false
-            max: 1
+            label: Documenti
+            template: document
+            uploads: document
+            info: false
+            sortable: true
             
 
         

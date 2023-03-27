@@ -53,6 +53,11 @@ tabs:
                   - link
                   - email
                 nodes: false
+                placeholder: |
+                  Associati
+                  2xMille
+                  5xMille
+                  Donazione
               footer:
                 label: Footer
                 placeholder: Anno

@@ -8,11 +8,13 @@
             <?php endforeach ?>
             </div>
         <?php endif ?>
-        <?php if ($pdf = $page->pdf()->toFile()) : ?>
-            <p><a class="menu-link" href="<?= $pdf->url() ?>" target="_blank" rel="noopener noreferrer"><?= $pdf->linkName() ?></a></p>
-        <?php endif ?>
     </div>
     <div class="info-column">
         <?= $page->righttext()->kt() ?>
+        <?php if ($page->document()->isNotEmpty()) : ?>
+            <?php foreach ($page->document()->toFiles() as $document) : ?>
+                <a href="<?= $document->url() ?>" target="_blank" rel="noopener noreferrer"><?= $document->documentTitle() ?></a>
+            <?php endforeach ?>
+        <?php endif ?>
     </div>
 </div>

@@ -17,9 +17,9 @@
     <div class="headline-data">
         <div class="date">
             <?php if ($event->date()->isNotEmpty()) : ?>
-                <h3><?= $event->date()->toDate('d/m/Y') ?></h3>
+                <p><?= $event->date()->toDate('d/m/Y') ?></p>
             <?php elseif ($event->years()->isNotEmpty()) : ?>
-                <h3><?= $event->years()->inline() ?></h3>
+                <p><?= $event->years()->inline() ?></p>
             <?php endif ?>
         </div>
         <div class="title">

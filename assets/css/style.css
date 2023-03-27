@@ -18,10 +18,8 @@ body {
     font-size: .9rem;
     line-height: 1.5;
     background-color: var(--bg-color);
-    position: relative;
     cursor: none;
     overflow-x: hidden;
-    font-display: swap;
 }
 
 em {
@@ -32,22 +30,15 @@ strong {
     font-weight: 700;
 }
 
-h2,
-h3 {
+h2 {
     line-height: 1;
 }
 
 footer {
     font-weight: 400;
     font-size: var(--normal-txt-size);
-    position: absolute;
-    bottom: var(--general-margin);
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
     text-align: center;
-    z-index: 9;
+    padding-bottom: var(--general-margin);
 }
 
 header {
@@ -315,7 +306,7 @@ a.current:hover::after {
     margin-right: var(--general-margin);
 }
 
-.headline-data .date h3 {
+.headline-data .date p {
     font-weight: 300;
     font-size: var(--large-txt-size);
     text-transform: uppercase;
@@ -491,6 +482,7 @@ a.current:hover::after {
 }
 
 .info-section {
+    min-height: var(--section-height);
     width: calc(100% - var(--main-margin-x)*2);
     position: absolute;
     top: var(--main-margin-y);
@@ -552,6 +544,7 @@ a.current:hover::after {
 figcaption a,
 .info-column a {
     position: relative;
+    width: fit-content;
 }
 
 figcaption a::after,
@@ -683,12 +676,8 @@ figcaption a:hover::after,
     z-index: -1;
     pointer-events: none;
     will-change: background-color;
-    -webkit-transition: background-color .25s ease;
-    -o-transition: background-color .25s ease;
-    transition: background-color .25s ease;
     overflow: hidden;
     display: none;
-    cursor: background-color .5s cubic-bezier(0.86, 0.07, 0.07, 0.96);
 }
 
 .cursor.change-z-index {
@@ -906,10 +895,6 @@ figcaption a:hover::after,
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
         gap: var(--general-margin);
-    }
-
-    .section-wrapper:not(:last-of-type) {
-        margin-bottom: var(--main-margin-y);
     }
 
     .info-section {

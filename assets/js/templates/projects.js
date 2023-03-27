@@ -62,14 +62,18 @@ const handleBlur = (images, texts, overlays) => {
     });
 };
 
-const projects = document.querySelectorAll(".section-wrapper");
 const handleHeight = () => {
-    projects.forEach(project => {
-        const sectionText = project.querySelector(".info-section");
-        const sectionImages = project.querySelector(".gallery-section");
-        const textHeight = sectionText.offsetHeight;
-        let sectionHeight = textHeight;
-        sectionImages.style.setProperty("--section-height", `${sectionHeight}px`);
+    const sections = document.querySelectorAll(".section-wrapper");
+    sections.forEach(section => {
+        const sectionText = section.querySelector(".info-section");
+        const sectionImages = section.querySelector(".gallery-section");
+        const textHeight = sectionText.clientHeight;
+        const imagesHeight = sectionImages.clientHeight;
+        if (textHeight > imagesHeight) {
+            sectionImages.style.setProperty("--section-height", `${textHeight}px`);
+        } else {
+            sectionText.style.setProperty("--section-height", `${imagesHeight}px`);
+        };
     });
 };
 

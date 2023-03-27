@@ -12,6 +12,7 @@
         >
     <?php endforeach ?>
 </div>
+<?php if ($page->video()->isNotEmpty()) : ?>
 <div class="video-wrapper">
     <div class="overlay"></div>
     <?php foreach ($page->video()->toFiles() as $video) : ?>
@@ -25,3 +26,4 @@
         </figure>
     <?php endforeach ?>
 </div>
+<?php endif ?>

@@ -27,9 +27,13 @@ const handleBlur = (images, texts, overlay) => {
 const sectionText = document.querySelector(".info-section");
 const sectionImages = document.querySelector(".gallery-section");
 const handleHeight = () => {
-    const textHeight = sectionText.offsetHeight;
-    let sectionHeight = textHeight;
-    sectionImages.style.setProperty("--section-height", `${sectionHeight}px`);
+    const textHeight = sectionText.clientHeight;
+    const imagesHeight = sectionImages.clientHeight;
+    if (textHeight > imagesHeight) {
+        sectionImages.style.setProperty("--section-height", `${textHeight}px`);
+    } else {
+        sectionText.style.setProperty("--section-height", `${imagesHeight}px`);
+    };
 };
 
 handleBlur(images, texts, overlay);
