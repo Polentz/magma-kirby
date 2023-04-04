@@ -2,9 +2,9 @@ name: Pulsante
 icon: bolt
 wysiwyg: true
 fields:
-  buttonlink:
+  link:
     label: Link del pulsante
     type: url
-  buttontext:
+  text:
     label: Testo del pulsante
     type: text

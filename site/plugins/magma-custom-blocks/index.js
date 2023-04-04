@@ -43,15 +43,30 @@ panel.plugin("magma/button", {
     button: {
       computed: {
         placeholder() {
-          return "Testo del Pulsante ...";
+          return "Testo del pulsante ...";
         }
       },
       template: `
         <input
           type="text"
           :placeholder="placeholder"
-          :value="content.buttontext"
-          @input="update({ buttontext: $event.target.value })"
+          :value="content.text"
+          @input="update({ text: $event.target.value })"
+        />
+      `
+    },
+    download: {
+      computed: {
+        placeholder() {
+          return "Testo del pulsante ...";
+        }
+      },
+      template: `
+        <input
+          type="text"
+          :placeholder="placeholder"
+          :value="content.text"
+          @input="update({ text: $event.target.value })"
         />
       `
     }

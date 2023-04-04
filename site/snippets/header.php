@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $site->title()->upper() ?> / <?= $page->title()->upper() ?></title>
+    <title><?= $site->title()->upper() ?> | <?= $page->title()->upper() ?></title>
     <meta name="description"
         content="<?= $site->description() ?>">
     <link rel="canonical" href="<?= $page->url() ?>">

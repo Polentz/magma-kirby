@@ -26,6 +26,4 @@
     </div>
 </section>
 <section class="overlay"></section>
-<div class="scroll-to-top"></div>
-
 <?= snippet('footer') ?>

@@ -11,10 +11,8 @@
     </div>
     <div class="info-column">
         <?= $page->righttext()->kt() ?>
-        <?php if ($page->document()->isNotEmpty()) : ?>
-            <?php foreach ($page->document()->toFiles() as $document) : ?>
-                <a href="<?= $document->url() ?>" target="_blank" rel="noopener noreferrer"><?= $document->documentTitle() ?></a>
-            <?php endforeach ?>
+        <?php if ($page->is('about')) : ?>
+            <p><a class="about-popup-open">TRASPARENZA</a></p>
         <?php endif ?>
     </div>
 </div>

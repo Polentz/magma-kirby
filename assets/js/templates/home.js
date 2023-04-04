@@ -84,6 +84,11 @@ const handleFilters = (filters, element, resetFilters, elements) => {
             filters.forEach(all => {
                 all.classList.remove("current");
             });
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            });
         });
     });
 };

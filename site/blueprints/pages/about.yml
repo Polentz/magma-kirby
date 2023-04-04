@@ -6,56 +6,108 @@ navigation:
     - about
     - projects
 
-columns:
-  main:
-    width: 3/4
-    sections: 
-      copy:
-        type: fields
-        fields:
-          lefttext:
-            label: Testo
-            width: 1/2
-            type: writer
-            marks:
-              - bold
-              - italic
-              - underline
-              - strike
-              - link
-              - email
-            nodes: false
-            placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
-          righttext:
-            label: false
-            width: 1/2
-            type: writer
-            marks:
-              - bold
-              - italic
-              - underline
-              - strike
-              - link
-              - email
-            nodes: false
-            placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
-  sidebar:
-    width: 1/4
+tabs:
+  about:
+    label: CHI SIAMO
+    icon: grid-full
+    columns:
+      main:
+        width: 3/4
+        sections: 
+          copy:
+            type: fields
+            fields:
+              lefttext:
+                label: Testo
+                width: 1/2
+                type: writer
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - strike
+                  - link
+                  - email
+                nodes: false
+                placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
+              righttext:
+                label: false
+                width: 1/2
+                type: writer
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - strike
+                  - link
+                  - email
+                nodes: false
+                placeholder: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet. Ornare aenean euismod elementum nisi."
+      sidebar:
+        width: 1/4
+        sections:
+          menu:
+            type: fields
+            fields:
+              subscribe:
+                label: Newsletter
+                placeholder: Link di Mailchimp
+                type: url
+  trasparenza:
+    label: TRASPARENZA
+    icon: badge
     sections:
-      menu:
+      popupBlocks:
         type: fields
         fields:
-          subscribe:
-            label: Newsletter
-            placeholder: Link di Mailchimp
-            type: url
-          document:
-            type: files
-            label: Documenti
-            template: document
-            uploads: document
-            info: false
-            sortable: true
+          popupBlocks:
+            label: Trasparenza
+            type: blocks
+            fieldsets:
+              title:
+                name: Titolo
+                icon: title
+                fields:
+                  title:
+                    label: Titolo
+                    type: text
+                    placeholder: Titolo ...
+              description:
+                name: Testo
+                icon: text
+                fields:
+                  description:
+                    label: Testo
+                    type: textarea
+                    placeholder: Testo ...
+              button:
+                name: Pulsante
+                icon: bolt
+                fields:
+                  link:
+                    label: Link del pulsante
+                    type: url
+                  text:
+                    label: Testo del pulsante
+                    type: text
+                    placeholder: Testo del pulsante ...
+              download:
+                name: Download File
+                icon: attachment
+                fields:
+                  file:
+                    label: Link del pulsante
+                    type: files
+                    label: File in download
+                    template: document
+                    uploads: document
+                    info: false
+                    max: 1
+                  text:
+                    label: Testo del pulsante
+                    type: text
+                    placeholder: Testo del pulsante ...
+
             
 
         

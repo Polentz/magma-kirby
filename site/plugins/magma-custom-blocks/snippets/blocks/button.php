@@ -1,5 +1,5 @@
-<?php if($block->buttontext()->isNotEmpty()): ?>
+<?php if($block->text()->isNotEmpty()): ?>
   <button class="button">
-    <a href="<?= $block->buttonlink() ?>" target="_blank" rel="noopener noreferrer"><?= $block->buttontext() ?></a>
+    <a href="<?= $block->link() ?>" target="_blank" rel="noopener noreferrer"><?= $block->text() ?></a>
   </button>
 <?php endif ?>

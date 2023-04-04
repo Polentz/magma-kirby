@@ -14,6 +14,14 @@ Subscribe:
 
 ----
 
+Popupblocks: [{"content":{"title":"Misure di trasparenza nel sistema delle erogazioni pubbliche"},"id":"ac31eb07-53c0-4aae-9d88-56dfa7502e2f","isHidden":false,"type":"title"},{"content":{"description":"Ragione sociale: MAGMA APS <br>Codice Fiscale: 92023650408 <br>Partita IVA \/ VAT: IT02692990399 <br>Sede legale:<br>Via Montanari, 34<br>48014 Bagnacavallo (RA)<br>Iscrizione a registri:<br>Registro Unico Nazionale del Terzo Settore"},"id":"6664a7b5-180b-442f-8e75-34650b3b6d48","isHidden":false,"type":"description"},{"content":{"description":"Il sottoscritto NOME COGNOME, in qualit\u00e0 di Legale Rappresentante di MAGMA APS, dichiara che i dati e le informazioni relative a sovvenzioni, sussidi, vantaggi, contributi o aiuti, in danaro o in natura, non aventi carattere generale e privi di natura corrispettiva, retributiva o risarcitoria ricevuti da enti e societ\u00e0 pubbliche, sono complete e rispondono al vero."},"id":"401ff5c1-acba-4af1-971c-0bd22678c684","isHidden":false,"type":"description"},{"content":{"title":"DOCUMENTI"},"id":"dc64bbfe-9af3-4655-a7cb-ed4ca22b497d","isHidden":false,"type":"title"},{"content":{"file":["file:\/\/s7WKthsV7gDjnRr7"],"text":"DICHIARAZIONE 2022"},"id":"d2331431-c350-4871-b0c9-05026dcc2282","isHidden":false,"type":"download"},{"content":{"file":["file:\/\/s7WKthsV7gDjnRr7"],"text":"assemblea soci 2022"},"id":"12b7f624-5515-4f62-94fc-532103734033","isHidden":false,"type":"download"},{"content":{"file":["file:\/\/s7WKthsV7gDjnRr7"],"text":"statuto"},"id":"64306f16-d8bd-4ba7-bc3a-102f44a18ce8","isHidden":false,"type":"download"}]
+
+----
+
+Document: 
+
+----
+
 Pdf: 
 
 ----

@@ -173,18 +173,18 @@ img::selection {
 }
 
 ::-moz-selection {
-    background-color: #ffffff80;
-    color: var(--txt-color);
+    background-color: transparent;
+    color: #8f00ff;
 }
 
 ::selection {
-    background-color: #ffffff80;
-    color: var(--txt-color);
+    background-color: transparent;
+    color: #8f00ff;
 }
 
 .headline-data p::selection,
 .headline-data h3::selection,
 .headline-data h2::selection {
-    background-color: #00000080;
-    color: var(--bg-color);
+    background-color: transparent;
+    color: #5dcc00;
 }

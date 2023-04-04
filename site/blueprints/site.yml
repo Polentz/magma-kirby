@@ -49,12 +49,12 @@ tabs:
                 type: text
   support:
     label: SOSTIENI MAGMA
-    icon: grid-full
+    icon: badge
     sections:
-      myBlocksField:
+      supportBlocks:
         type: fields
         fields:
-          myBlocksField:
+          supportBlocks:
             label: SOSTIENI MAGMA
             type: blocks
             fieldsets:
@@ -78,16 +78,32 @@ tabs:
                 name: Pulsante
                 icon: bolt
                 fields:
-                  buttonlink:
+                  link:
                     label: Link del pulsante
                     type: url
-                  buttontext:
+                  text:
+                    label: Testo del pulsante
+                    type: text
+                    placeholder: Testo del pulsante ...
+              download:
+                name: Download File
+                icon: attachment
+                fields:
+                  file:
+                    label: Link del pulsante
+                    type: files
+                    label: File in download
+                    template: document
+                    uploads: document
+                    info: false
+                    max: 1
+                  text:
                     label: Testo del pulsante
                     type: text
                     placeholder: Testo del pulsante ...
   seo:
     label: SEO DEL SITO WEB
-    icon: grid-full
+    icon: circle
     columns:
       main:
         width: 2/3

@@ -33,16 +33,16 @@ const unblurOnScroll = () => {
     }
 }
 
-const popupOpen = document.querySelectorAll(".popup-open");
-const popup = document.querySelector(".popup");
-const popupClose = document.querySelector(".popup-close");
+const opener = document.querySelectorAll(".popup-open");
+const popup = document.getElementById("support");
+const closer = popup.querySelector(".popup-close");
 const handlePopup = () => {
-    popupOpen.forEach(btn => {
+    opener.forEach(btn => {
         btn.addEventListener("click", () => {
             popup.classList.toggle("show");
         });
     });
-    popupClose.addEventListener("click", () => {
+    closer.addEventListener("click", () => {
         popup.classList.remove("show");
     });
 };
