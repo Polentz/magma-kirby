@@ -56,6 +56,8 @@ img[data-lazyload][data-src] {
 }
 
 .button {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     padding: var(--normal-txt-size) var(--large-txt-size);
     border: solid 2px var(--txt-color);
@@ -564,6 +566,8 @@ figcaption a,
 .info-column p a,
 .popup p a {
     position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -652,8 +656,14 @@ figcaption a:hover::after,
     width: 100%;
     height: 100%;
     padding: calc(var(--general-margin)*2);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: var(--general-margin);
     overflow-y: scroll;
@@ -665,11 +675,18 @@ figcaption a:hover::after,
 }
 
 .popup-content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
     flex: 1 1;
 }
 
 .popup-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: var(--general-margin);
 }
@@ -1004,6 +1021,8 @@ figcaption a:hover::after,
     }
 
     .popup-blocks .button {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
     }
 }
