@@ -1,25 +1,43 @@
 panel.plugin("magma/button", {
   blocks: {
     title: {
+      computed: {
+        placeholder() {
+          return "Titolo ...";
+        }
+      },
       template: `
-        <div
-          class="ProseMirror"
-          tabindex="0"
-          :contenteditable="true"
-          >
-          <h2>{{ content.title }}</h2>
-        </div>
+      <div>
+        <k-writer
+          ref="input"
+          :inline="true"
+          :placeholder="placeholder"
+          :value="content.title"
+          :spellcheck="true"
+          :marks="false"
+          @input="update({ title: $event })"
+        />
+      </div>
       `
     },
     description: {
+      computed: {
+        placeholder() {
+          return "Testo ...";
+        }
+      },
       template: `
-        <div 
-        class="ProseMirror"
-        tabindex="0"
-        :contenteditable="true"
-        >
-          <p>{{ content.description }}</p>
-        </div>
+      <div>
+        <k-writer
+          ref="input"
+          :inline="true"
+          :placeholder="placeholder"
+          :value="content.description"
+          :spellcheck="true"
+          :marks="false"
+          @input="update({ description: $event })"
+        />
+      </div>
       `
     },
     button: {

@@ -14,13 +14,13 @@
     border-color: #000;
 }
 
-.k-block-type-title h2 {
+.k-block-type-title div {
     font: inherit;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.k-block-type-description p {
+.k-block-type-description div {
     font: inherit;
 }
 

@@ -22,11 +22,11 @@ Shop: https://magmaaps.bigcartel.com/
 
 ----
 
-Support: <p>Associati</p><p>2xMille</p><p>5xMille</p><p>Donazione</p>
+Footer: 2023
 
 ----
 
-Footer: 2023
+Myblocksfield: [{"content":{"title":"TESSERAMENTO"},"id":"c7c038a3-5af2-468d-b3ae-9e18c0cad112","isHidden":false,"type":"title"},{"content":{"description":"La tessera di MAGMA APS ha validit\u00e0 annuale e un costo di --- Euro"},"id":"86373780-5f77-48ae-8f29-18103d344253","isHidden":false,"type":"description"},{"content":{"buttonlink":"https:\/\/www.magma.zone\/","buttontext":"COMPILA IL FORM"},"id":"599bb60d-c230-477b-8ecd-d3baed96ebab","isHidden":false,"type":"button"},{"content":{"title":"DONAZIONE"},"id":"b174638d-9490-4bab-9b7a-0d752ce04875","isHidden":false,"type":"title"},{"content":{"description":"Puoi sostenere MAGMA attraverso una donazione tramite bonifico bancario, utilizzando le nostre coordinate (IBAN: IT38P0538767490000003425211) oppure via PayPal"},"id":"b15c4812-b565-4389-95e8-1449abeb170e","isHidden":false,"type":"description"},{"content":{"buttonlink":"https:\/\/www.magma.zone\/","buttontext":"PAYPAL"},"id":"95cd34d6-2ebc-41f6-b28f-d1cb9ef41a7a","isHidden":false,"type":"button"},{"content":{"title":"CINQUE X MILLE"},"id":"5b1646bd-6b99-459e-8225-11800288329a","isHidden":false,"type":"title"},{"content":{"description":"Per supportare MAGMA con il 5\u00d71000 \u00e8 sufficiente indicare nella dichiarazione dei redditi il nostro codice fiscale 92095360399"},"id":"aea484cc-4949-4bec-bd60-a58b75fa86d4","isHidden":false,"type":"description"},{"content":{"title":"ART BONUS"},"id":"1e1db9f9-7152-4423-87cc-732a3351b971","isHidden":false,"type":"title"},{"content":{"description":"L'Art Bonus consente un credito di imposta pari al 65% dell'importo donato, sia alle persone fisiche, sia ai soggetti titolari di reddito d'impresa"},"id":"0040df69-deda-4a47-aeb0-ece4794b6728","isHidden":false,"type":"description"}]
 
 ----
 
@@ -39,3 +39,11 @@ Keywords: keyword
 ----
 
 Ogimage: 
+
+----
+
+Support: <p>Associati</p><p>2xMille</p><p>5xMille</p><p>Donazione</p>
+
+----
+
+Lefttext: 

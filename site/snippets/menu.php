@@ -10,6 +10,7 @@
             <?php if ($page->is('about')) : ?>
                 <p class="menu-link popup-open">Sostieni MAGMA</p>
                 <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
+                <!-- <p class="menu-link popup-open">Trasparenza</p> -->
             <?php endif ?>
             <?php if ($page->is('projects')) : ?>
                 <?php foreach ($page->children()->listed() as $project) : ?>

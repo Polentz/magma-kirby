@@ -58,7 +58,6 @@ tabs:
             label: SOSTIENI MAGMA
             type: blocks
             fieldsets:
-              - heading
               title:
                 name: Titolo
                 icon: title
@@ -66,6 +65,7 @@ tabs:
                   title:
                     label: Titolo
                     type: text
+                    placeholder: Titolo ...
               description:
                 name: Testo
                 icon: text
@@ -73,6 +73,7 @@ tabs:
                   description:
                     label: Testo
                     type: textarea
+                    placeholder: Testo ...
               button:
                 name: Pulsante
                 icon: bolt
@@ -83,6 +84,7 @@ tabs:
                   buttontext:
                     label: Testo del pulsante
                     type: text
+                    placeholder: Testo del pulsante ...
   seo:
     label: SEO DEL SITO WEB
     icon: grid-full
