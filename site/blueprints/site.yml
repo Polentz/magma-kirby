@@ -42,29 +42,49 @@ tabs:
                 label: Shop
                 placeholder: Link dello shop
                 type: url
-              support:
-                label: Sostieni
-                type: writer
-                marks:
-                  - bold
-                  - italic
-                  - underline
-                  - strike
-                  - link
-                  - email
-                nodes: false
-                placeholder: |
-                  Associati
-                  2xMille
-                  5xMille
-                  Donazione
               footer:
                 label: Footer
                 placeholder: Anno
                 after: "© MAGMA"
                 type: text
+  support:
+    label: SOSTIENI MAGMA
+    icon: grid-full
+    sections:
+      myBlocksField:
+        type: fields
+        fields:
+          myBlocksField:
+            label: SOSTIENI MAGMA
+            type: blocks
+            fieldsets:
+              - heading
+              title:
+                name: Titolo
+                icon: title
+                fields:
+                  title:
+                    label: Titolo
+                    type: text
+              description:
+                name: Testo
+                icon: text
+                fields:
+                  description:
+                    label: Testo
+                    type: textarea
+              button:
+                name: Pulsante
+                icon: bolt
+                fields:
+                  buttonlink:
+                    label: Link del pulsante
+                    type: url
+                  buttontext:
+                    label: Testo del pulsante
+                    type: text
   seo:
-    label: SEO
+    label: SEO DEL SITO WEB
     icon: grid-full
     columns:
       main:

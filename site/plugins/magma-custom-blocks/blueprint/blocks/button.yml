@@ -1,0 +1,10 @@
+name: Pulsante
+icon: bolt
+wysiwyg: true
+fields:
+  buttonlink:
+    label: Link del pulsante
+    type: url
+  buttontext:
+    label: Testo del pulsante
+    type: text

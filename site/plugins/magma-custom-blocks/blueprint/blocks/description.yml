@@ -1,0 +1,7 @@
+name: Descrizione
+icon: text
+wysiwyg: true
+fields:
+  description:
+    label: Descrizione
+    type: textarea

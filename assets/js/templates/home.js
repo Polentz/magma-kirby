@@ -34,10 +34,14 @@ const handleTitleHOverEffect = (events) => {
         const title = event.querySelector(".headline-data .title h2");
         const cover = event.querySelector(".headline-cover img");
         title.addEventListener("mouseenter", () => {
-            cover.classList.add("unblur");
+            if (cover) {
+                cover.classList.add("unblur");
+            }
         });
         title.addEventListener("mouseleave", () => {
-            cover.classList.remove("unblur");
+            if (cover) {
+                cover.classList.remove("unblur");
+            }
         });
     });
 };

@@ -1,6 +1,6 @@
 const cursor = document.getElementById("cursor");
 const changeCursorMedia = document.querySelectorAll("img, video, .overlay");
-const changeCursorLinks = document.querySelectorAll("a, .menu-link, .page-title.home, .page-title.projects, .menu-close, popup-close, .page-label p");
+const changeCursorLinks = document.querySelectorAll("a, .menu-link, .page-title.home, .page-title.projects, .menu-close, .popup-close, .page-label p");
 
 const handleCursor = () => {
     document.addEventListener("mousemove", (event) => {
