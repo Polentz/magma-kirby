@@ -995,6 +995,7 @@ figcaption a:hover::after,
 
     .popup {
         width: calc(100% - var(--general-margin)*2);
+        height: 100%;
     }
 
     .popup-wrapper {
