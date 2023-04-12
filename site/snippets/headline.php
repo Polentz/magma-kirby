@@ -7,7 +7,7 @@
                     src="<?= $cover->crop(1200, 750, 72)->placeholderUri() ?>"
                     data-src="<?= $cover->crop(1200, 750, 72)->url() ?>"
                     data-lazyload 
-                    alt="<?= $cover->alt() ?>" 
+                    aria-hidden="true" 
                     width="100%"
                     data-sizes="auto"
                 >

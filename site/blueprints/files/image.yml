@@ -5,10 +5,6 @@ accept:
   maxsize: 1258291
 
 fields:
-  alt:
-    type: text
-    width: 1/2
-    label: Testo alternativo
   credits:
     type: text
     width: 1/2

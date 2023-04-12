@@ -98,17 +98,9 @@ img[data-lazyload][data-src] {
 }
 
 .current {
-    position: relative;
-}
-
-.current::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: var(--txt-color);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .page-title.home:hover,
@@ -117,12 +109,6 @@ img[data-lazyload][data-src] {
 .page-label p:hover,
 p a:hover {
     color: var(--white);
-}
-
-.page-title.home.current:hover::after,
-.page-title.projects.current:hover::after,
-a.current:hover::after {
-    background-color: var(--white);
 }
 
 .page-title,
@@ -565,28 +551,11 @@ a.current:hover::after {
 figcaption a,
 .info-column p a,
 .popup p a {
-    position: relative;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-}
-
-figcaption a::after,
-.info-column p a::after,
-.popup p a::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--txt-color);
-}
-
-figcaption a:hover::after,
-.info-column p a:hover::after,
-.popup p a:hover::after {
-    background-color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .page-label {
@@ -879,9 +848,9 @@ figcaption a:hover::after,
         padding: 0;
         gap: calc(var(--general-margin)/2);
         -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .submenu-wrapper {
@@ -902,12 +871,6 @@ figcaption a:hover::after,
         -webkit-box-direction: unset;
         -ms-flex-direction: unset;
         flex-direction: unset;
-    }
-
-    .page-title.home.current:hover::after,
-    .page-title.projects.current:hover::after,
-    a.current:hover::after {
-        background-color: var(--txt-color);
     }
 
     .page-title.home:hover,
@@ -936,6 +899,10 @@ figcaption a:hover::after,
 
     .headline-data .title {
         max-width: auto;
+    }
+
+    .headline-data .title p {
+        white-space: normal;
     }
 
     .headline-cover {
@@ -968,6 +935,7 @@ figcaption a:hover::after,
     }
 
     .info-section {
+        min-height: unset;
         width: 100%;
         position: static;
         padding-bottom: 0;

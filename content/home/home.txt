@@ -5,13 +5,7 @@ Title: Agenda
 Filters:
 
 - 
-  filter: Dj Set
-- 
   filter: Concerto
-- 
-  filter: Performance
-- 
-  filter: Arti Visive
 
 ----
 

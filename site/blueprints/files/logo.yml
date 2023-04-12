@@ -3,9 +3,3 @@ title: Logo
 accept: 
   extension: jpg, png, jpeg
   maxsize: 1048576
-
-fields:
-  alt:
-    type: text
-    width: 1/2
-    label: Testo alternativo

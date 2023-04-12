@@ -4,7 +4,7 @@
         <?php if ($page->logo()->isNotEmpty()) : ?>
             <div class="logo-wrapper">
             <?php foreach ($page->logo()->toFiles() as $logo) : ?>
-                <img src="<?= $logo->resize(800, null)->url() ?>" alt="<?= $logo->alt() ?>">
+                <img src="<?= $logo->resize(800, null)->url() ?>" aria-hidden="true">
             <?php endforeach ?>
             </div>
         <?php endif ?>

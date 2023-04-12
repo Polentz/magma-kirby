@@ -20,7 +20,7 @@ const handleMenu = (open, submenu, close) => {
 };
 
 const unblurOnScroll = () => {
-    const images = document.querySelectorAll("img, video");
+    const images = document.querySelectorAll(".gallery-wrapper img, .headline-cover img, .gallery-wrapper video");
     for (let i = 0; i < images.length; i++) {
         const windowHeight = window.innerHeight;
         const elementTop = images[i].getBoundingClientRect().top;
@@ -29,9 +29,9 @@ const unblurOnScroll = () => {
             images[i].classList.add("scroll-unblur");
         } else {
             images[i].classList.remove("scroll-unblur");
-        }
-    }
-}
+        };
+    };
+};
 
 const opener = document.querySelectorAll(".popup-open");
 const popup = document.getElementById("support");
