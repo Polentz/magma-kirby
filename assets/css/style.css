@@ -481,7 +481,7 @@ p a:hover {
 }
 
 .logo-wrapper img {
-    width: 48px;
+    width: 64px;
     -o-object-fit: contain;
     object-fit: contain;
     -webkit-filter: grayscale(1);
@@ -735,19 +735,6 @@ figcaption a,
 .show {
     opacity: 1;
     pointer-events: all;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-
-    img[data-lazyload] {
-        -webkit-transition: .5s cubic-bezier(0.86, 0.07, 0.07, 0.96);
-        -o-transition: .5s cubic-bezier(0.86, 0.07, 0.07, 0.96);
-        transition: .5s cubic-bezier(0.86, 0.07, 0.07, 0.96);
-        -webkit-transition-property: all;
-        -o-transition-property: all;
-        transition-property: all;
-        will-change: opacity, filter;
-    }
 }
 
 @media screen and (max-width: 720px) {
