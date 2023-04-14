@@ -46,7 +46,6 @@ columns:
             width: 1/2
             type: writer
             marks:
-              - bold
               - italic
               - underline
               - strike
@@ -60,7 +59,6 @@ columns:
             type: writer
             marks:
               - bold
-              - italic
               - underline
               - strike
               - link

@@ -30,11 +30,11 @@ Supportblocks: [{"content":{"title":"TESSERAMENTO"},"id":"c7c038a3-5af2-468d-b3a
 
 ----
 
-Description: Description here...
+Description: MAGMA è un collettivo di artisti e persone accomunate da un interesse verso le diverse forme dell’arte contemporanea. Dal 2014, organizza eventi e azioni culturali nel territorio romagnolo contraddistinti da un uso scenografico degli spazi: teatri naturali, urbani ed extra urbani, architetture in disuso, luoghi dimenticati che generano un forte impatto estetico ed emotivo. In collaborazione con artisti, ricercatori italiani e internazionali, MAGMA cura e presenta attività, concerti, performance, mostre e iniziative volte alla sperimentazione in molteplici ambiti: musica, sound art, arti visive, ecologia e pedagogia.
 
 ----
 
-Keywords: keyword
+Keywords: arte contemporanea, romagna, territorio romagnolo, arti visive, musica, concerti, dj set, performance, sound art, mostre, collettivo, produzione di eventi, spazio urbano, cura, curatela
 
 ----
 

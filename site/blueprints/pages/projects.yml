@@ -11,6 +11,9 @@ sections:
     label: Lista dei progetti
     type: pages
     layout: table
+    sortBy: date desc
+    limit: 100
+    search: true
     columns:
       years:
         type: text

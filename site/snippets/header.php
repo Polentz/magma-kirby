@@ -25,13 +25,14 @@
     <meta name="twitter:description"
         content="<?= $site->description() ?>">
     <meta name="twitter:title"
-        content="<?= $site->description() ?>">
+        content="<?= $site->title()->upper()?>">
     <?php if ($site->ogimage()->isNotEmpty()) : ?>
         <meta name="twitter:image:alt" content="<?= $site->ogimage()->toFile()->alt() ?>">
     <?php endif ?>
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <!-- <link rel="shortcut icon" type="image/png" sizes="48x48" href="/assets/favicon/"> -->
-    <!-- <link rel="shortcut icon" type="image/png" sizes="192x192" href="/assets/favicon/"> -->
+    <link rel="shortcut icon" type="image/png" sizes="48x48" href="/assets/favicons/favicon48.png">
+    <link rel="shortcut icon" type="image/png" sizes="192x192" href="/assets/favicons/favicon192.png">
+    <link rel="shortcut icon" type="image/png" sizes="512x512" href="/assets/favicons/favicon512.png">
     <link rel="stylesheet" href="https://use.typekit.net/mgw4tyk.css">
     <?= css ([
         'assets/css/base.css',

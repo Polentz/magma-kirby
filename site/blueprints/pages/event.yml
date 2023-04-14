@@ -88,7 +88,6 @@ tabs:
                 width: 1/2
                 type: writer
                 marks:
-                  - bold
                   - italic
                   - underline
                   - strike
@@ -102,7 +101,6 @@ tabs:
                 type: writer
                 marks:
                   - bold
-                  - italic
                   - underline
                   - strike
                   - link

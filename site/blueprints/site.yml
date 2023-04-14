@@ -113,7 +113,8 @@ tabs:
             fields:
               description:
                 label: Descrizione
-                type: text
+                type: textarea
+                buttons: false
               keywords:
                 label: Keywords
                 type: tags                

@@ -18,12 +18,24 @@ sections:
         max: 4
         fields:
           filter:
-            type: text
+            type: tags
             label: Filtri disponibili
+            options:
+              - Dj Set
+              - Concerto
+              - Performance
+              - Arti visive
+            accept: options
+            max: 1
+            min: 1
+            layout: list
   pages:
     label: Lista degli eventi
     type: pages
     layout: table
+    sortBy: date desc
+    limit: 100
+    search: true
     columns:
       date:
         type: text

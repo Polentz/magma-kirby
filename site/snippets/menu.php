@@ -59,7 +59,7 @@
                 <?php endif ?>
             </div>
             <div class="submenu-wrapper">
-                <?php foreach ($pages->unlisted()->not('error') as $page) : ?>
+                <?php foreach ($pages->listed()->not('error') as $page) : ?>
                     <a href="<?= $page->url() ?>" class="menu-link"><?= $page->title() ?></a>
                 <?php endforeach ?>
                 <?php if ($site->shop()->isNotEmpty()) : ?>

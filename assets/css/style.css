@@ -1022,6 +1022,10 @@ figcaption a,
         margin-bottom: 0;
     }
 
+    .headline-data p {
+        display: block;
+    }
+
     .gallery-wrapper {
         display: -webkit-box;
         display: -ms-flexbox;
