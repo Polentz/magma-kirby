@@ -1,4 +1,6 @@
 title: Image
+options:
+  preview: false
 
 accept: 
   extension: jpg, png, jpeg

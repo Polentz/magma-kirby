@@ -1,4 +1,6 @@
 title: Video
+options:
+  preview: false
 
 accept: 
   extension: mp4

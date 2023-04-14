@@ -9,7 +9,7 @@
 
 <?php if ($page->is('about')) : ?>
     <div class="submenu-wrapper on-mobile">
-        <a class="menu-link" href="<?= $site->support()->url() ?>" target="_blank" rel="noopener noreferrer">Sostieni MAGMA</a>
+        <p id="support-open-menu" class="menu-link popup-open">Sostieni MAGMA</p>
         <a class="menu-link" href="<?= $page->subscribe()->url() ?>" target="_blank" rel="noopener noreferrer">Newsletter</a>
     </div>
 <?php endif ?>
